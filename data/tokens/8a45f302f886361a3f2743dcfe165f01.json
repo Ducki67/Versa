@@ -1,0 +1,10 @@
+{
+  "accountId": "846ea5b75949467b98e81d0b41644d8c",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NDZlYTViNzU5NDk0NjdiOThlODFkMGI0MTY0NGQ4YyIsImNsaWQiOiJmb3J0bml0ZVBDR2FtZUNsaWVudCIsImFtIjoicmVmcmVzaF90b2tlbiIsImR2aWQiOiJkZDliZDI1Mi0xMmNjLTQ1NDItYTk5Zi02ZWE3Y2ZkYjk1ZDMiLCJkbiI6InRlc3Rlcl8xNzg5MTQwOTc4MDE3IiwiYXBwIjoiZm9ydG5pdGUiLCJzZWMiOiJmb3J0bml0ZSIsInQiOiJyIiwiY3JlYXRpb25fZGF0ZSI6IjIwMjYtMDktMTFUMTU6MzY6MTguMTMyWiIsImhvdXJzX2V4cGlyZSI6MjQsImlhdCI6MTc4OTE0MDk3OCwiZXhwIjoxNzg5MjI3Mzc4fQ.TdI4BNA5ngvCi0jcG8AgR06hqJfV6ZMu0vLg3ksr5ho",
+  "type": "refresh",
+  "clientId": "fortnitePCGameClient",
+  "deviceId": "dd9bd252-12cc-4542-a99f-6ea7cfdb95d3",
+  "authMethod": "refresh_token",
+  "displayName": "tester_1789140978017",
+  "expiresAt": "2026-09-12T15:36:18.133Z"
+}

@@ -1,0 +1,6 @@
+[90m2026-09-10 20:25:54[0m [32mOK[0m Versa is running [90mhttp://localhost:3557[0m
+[90m20:25:57[0m [32m200[0m GET /fortnite/api/versioncheck [90m1.8ms[0m
+[90m20:25:57[0m [32m200[0m GET /fortnite/api/v2/versioncheck/Windows [90m0.2ms[0m
+[90m20:25:57[0m [32m200[0m POST /account/api/oauth/token [90m6.5ms[0m
+[90m20:25:57[0m [32m200[0m POST /account/api/oauth/token [90m2.3ms[0m
+[90m20:25:57[0m [32m200[0m POST /auth/v1/oauth/token [90m3.2ms[0m

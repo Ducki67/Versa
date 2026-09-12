@@ -1,0 +1,10 @@
+{
+  "accountId": "efc11f4e-68a4-418b-ac6f-1ac03fa981fb",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZmMxMWY0ZS02OGE0LTQxOGItYWM2Zi0xYWMwM2ZhOTgxZmIiLCJjbGlkIjoiZm9ydG5pdGVQQ0dhbWVDbGllbnQiLCJhbSI6ImNsaWVudF9jcmVkZW50aWFscyIsImR2aWQiOiI1NzdjOWEzNC1hMzZjLTRiOWYtODE5MS1hMGFlZDk4NGQzYzQiLCJkbiI6IkZvcnRuaXRlIFBDIEdhbWUgQ2xpZW50IiwiYXBwIjoiZm9ydG5pdGUiLCJzZWMiOiJmb3J0bml0ZSIsInQiOiJzIiwiY3JlYXRpb25fZGF0ZSI6IjIwMjYtMDktMTBUMjE6MTk6MzAuODMyWiIsImhvdXJzX2V4cGlyZSI6NCwiaWF0IjoxNzg5MDc1MTcwLCJleHAiOjE3ODkwODk1NzB9.-IiHktW8t4YPbQb7csIevd_IhXQv1VYrTEUanCb3ikw",
+  "type": "access",
+  "clientId": "fortnitePCGameClient",
+  "deviceId": "577c9a34-a36c-4b9f-8191-a0aed984d3c4",
+  "authMethod": "client_credentials",
+  "displayName": "Fortnite PC Game Client",
+  "expiresAt": "2026-09-11T01:19:30.840Z"
+}

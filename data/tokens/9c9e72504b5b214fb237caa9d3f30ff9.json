@@ -1,0 +1,10 @@
+{
+  "accountId": "504a10f27b7e4882a7acf6fa919f7ddb",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MDRhMTBmMjdiN2U0ODgyYTdhY2Y2ZmE5MTlmN2RkYiIsImNsaWQiOiJmb3J0bml0ZVBDR2FtZUNsaWVudCIsImFtIjoicGFzc3dvcmQiLCJkdmlkIjoiNDg0NGM4MzAtZjA5Yy00MDc3LWExMzEtMmJkNGY2YTllM2MxIiwiZG4iOiJzc2QiLCJhcHAiOiJmb3J0bml0ZSIsInNlYyI6ImZvcnRuaXRlIiwidCI6InIiLCJjcmVhdGlvbl9kYXRlIjoiMjAyNi0wOS0xMVQxNjowMDo0Ni43NzJaIiwiaG91cnNfZXhwaXJlIjoyNCwiaWF0IjoxNzg5MTQyNDQ2LCJleHAiOjE3ODkyMjg4NDZ9.if2SKATX73hM6QCAwERfOnjaEmgoJ0px7UG8Hth_C4o",
+  "type": "refresh",
+  "clientId": "fortnitePCGameClient",
+  "deviceId": "4844c830-f09c-4077-a131-2bd4f6a9e3c1",
+  "authMethod": "password",
+  "displayName": "ssd",
+  "expiresAt": "2026-09-12T16:00:46.772Z"
+}

@@ -1,0 +1,10 @@
+{
+  "accountId": "846ea5b75949467b98e81d0b41644d8c",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NDZlYTViNzU5NDk0NjdiOThlODFkMGI0MTY0NGQ4YyIsImNsaWQiOiJmb3J0bml0ZVBDR2FtZUNsaWVudCIsImFtIjoicGFzc3dvcmQiLCJkdmlkIjoiMTlmZjU0NWQtZmIwMC00YTlkLTk1NjYtNjI0Yzg4OTMzZDFiIiwiZG4iOiJ0ZXN0ZXJfMTc4OTE0MDk3ODAxNyIsImFwcCI6ImZvcnRuaXRlIiwic2VjIjoiZm9ydG5pdGUiLCJ0IjoicyIsImNyZWF0aW9uX2RhdGUiOiIyMDI2LTA5LTExVDE1OjM2OjE4LjA4NFoiLCJob3Vyc19leHBpcmUiOjgsImlhdCI6MTc4OTE0MDk3OCwiZXhwIjoxNzg5MTY5Nzc4fQ.Sxy-LEDbom3CvE1JyHYkdnBnMSvFXZU_YGHhOWNijeM",
+  "type": "access",
+  "clientId": "fortnitePCGameClient",
+  "deviceId": "19ff545d-fb00-4a9d-9566-624c88933d1b",
+  "authMethod": "password",
+  "displayName": "tester_1789140978017",
+  "expiresAt": "2026-09-11T23:36:18.085Z"
+}

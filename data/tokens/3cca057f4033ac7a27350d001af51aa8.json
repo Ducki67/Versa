@@ -1,0 +1,10 @@
+{
+  "accountId": "12129fdbb82c418c80841b4a3d535d78",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEyOWZkYmI4MmM0MThjODA4NDFiNGEzZDUzNWQ3OCIsImNsaWQiOiJmb3J0bml0ZVBDR2FtZUNsaWVudCIsImFtIjoicGFzc3dvcmQiLCJkdmlkIjoiYzcxNjJmZDctY2UxMS00OTBjLTg0ZDAtMjZlODFkODQxMmRkIiwiZG4iOiJib2IiLCJhcHAiOiJmb3J0bml0ZSIsInNlYyI6ImZvcnRuaXRlIiwidCI6InIiLCJjcmVhdGlvbl9kYXRlIjoiMjAyNi0wOS0xMVQxNTozNDozMy4xMzNaIiwiaG91cnNfZXhwaXJlIjoyNCwiaWF0IjoxNzg5MTQwODczLCJleHAiOjE3ODkyMjcyNzN9.iwuHS-OwPNeC47ZeJ_sQlKArYEpIrZwKITR4uwPRMRY",
+  "type": "refresh",
+  "clientId": "fortnitePCGameClient",
+  "deviceId": "c7162fd7-ce11-490c-84d0-26e81d8412dd",
+  "authMethod": "password",
+  "displayName": "bob",
+  "expiresAt": "2026-09-12T15:34:33.133Z"
+}
