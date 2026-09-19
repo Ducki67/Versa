@@ -1,0 +1,31 @@
+{
+  "accountId": "aa6f2a38e3cd472990165d5ebb1273d5",
+  "profileId": "common_core",
+  "rvn": 1,
+  "commandRevision": 0,
+  "data": {
+    "items": {
+      "Currency:MtxPurchased": {
+        "templateId": "Currency:MtxPurchased",
+        "attributes": {
+          "platform": "EpicPC"
+        },
+        "quantity": 100000
+      },
+      "Currency:MtxGiveaway": {
+        "templateId": "Currency:MtxGiveaway",
+        "attributes": {},
+        "quantity": 0
+      }
+    },
+    "stats": {
+      "attributes": {
+        "current_mtx_platform": "EpicPC",
+        "mtx_purchase_history": {},
+        "daily_purchases": {},
+        "fn_app_version": "",
+        "current_mtx_currency": "MtxPurchased"
+      }
+    }
+  }
+}

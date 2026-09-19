@@ -1,0 +1,3761 @@
+{
+  "accountId": "aa6f2a38e3cd472990165d5ebb1273d5",
+  "profileId": "athena",
+  "rvn": 3,
+  "commandRevision": 2,
+  "data": {
+    "items": {
+      "AthenaCharacter:AthenaCharacter_001": {
+        "templateId": "AthenaCharacter:AthenaCharacter_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_002": {
+        "templateId": "AthenaCharacter:AthenaCharacter_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_003": {
+        "templateId": "AthenaCharacter:AthenaCharacter_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_004": {
+        "templateId": "AthenaCharacter:AthenaCharacter_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_005": {
+        "templateId": "AthenaCharacter:AthenaCharacter_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_006": {
+        "templateId": "AthenaCharacter:AthenaCharacter_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_007": {
+        "templateId": "AthenaCharacter:AthenaCharacter_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_008": {
+        "templateId": "AthenaCharacter:AthenaCharacter_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_009": {
+        "templateId": "AthenaCharacter:AthenaCharacter_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_010": {
+        "templateId": "AthenaCharacter:AthenaCharacter_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_011": {
+        "templateId": "AthenaCharacter:AthenaCharacter_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_012": {
+        "templateId": "AthenaCharacter:AthenaCharacter_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_013": {
+        "templateId": "AthenaCharacter:AthenaCharacter_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_014": {
+        "templateId": "AthenaCharacter:AthenaCharacter_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_015": {
+        "templateId": "AthenaCharacter:AthenaCharacter_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_016": {
+        "templateId": "AthenaCharacter:AthenaCharacter_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_017": {
+        "templateId": "AthenaCharacter:AthenaCharacter_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_018": {
+        "templateId": "AthenaCharacter:AthenaCharacter_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_019": {
+        "templateId": "AthenaCharacter:AthenaCharacter_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_020": {
+        "templateId": "AthenaCharacter:AthenaCharacter_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_021": {
+        "templateId": "AthenaCharacter:AthenaCharacter_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_022": {
+        "templateId": "AthenaCharacter:AthenaCharacter_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_023": {
+        "templateId": "AthenaCharacter:AthenaCharacter_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_024": {
+        "templateId": "AthenaCharacter:AthenaCharacter_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_025": {
+        "templateId": "AthenaCharacter:AthenaCharacter_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_026": {
+        "templateId": "AthenaCharacter:AthenaCharacter_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_027": {
+        "templateId": "AthenaCharacter:AthenaCharacter_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_028": {
+        "templateId": "AthenaCharacter:AthenaCharacter_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_029": {
+        "templateId": "AthenaCharacter:AthenaCharacter_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_030": {
+        "templateId": "AthenaCharacter:AthenaCharacter_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_031": {
+        "templateId": "AthenaCharacter:AthenaCharacter_031",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_032": {
+        "templateId": "AthenaCharacter:AthenaCharacter_032",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_033": {
+        "templateId": "AthenaCharacter:AthenaCharacter_033",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_034": {
+        "templateId": "AthenaCharacter:AthenaCharacter_034",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_035": {
+        "templateId": "AthenaCharacter:AthenaCharacter_035",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_036": {
+        "templateId": "AthenaCharacter:AthenaCharacter_036",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_037": {
+        "templateId": "AthenaCharacter:AthenaCharacter_037",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_038": {
+        "templateId": "AthenaCharacter:AthenaCharacter_038",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_039": {
+        "templateId": "AthenaCharacter:AthenaCharacter_039",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_040": {
+        "templateId": "AthenaCharacter:AthenaCharacter_040",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_041": {
+        "templateId": "AthenaCharacter:AthenaCharacter_041",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_042": {
+        "templateId": "AthenaCharacter:AthenaCharacter_042",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_043": {
+        "templateId": "AthenaCharacter:AthenaCharacter_043",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_044": {
+        "templateId": "AthenaCharacter:AthenaCharacter_044",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_045": {
+        "templateId": "AthenaCharacter:AthenaCharacter_045",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_046": {
+        "templateId": "AthenaCharacter:AthenaCharacter_046",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_047": {
+        "templateId": "AthenaCharacter:AthenaCharacter_047",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_048": {
+        "templateId": "AthenaCharacter:AthenaCharacter_048",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_049": {
+        "templateId": "AthenaCharacter:AthenaCharacter_049",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_050": {
+        "templateId": "AthenaCharacter:AthenaCharacter_050",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_051": {
+        "templateId": "AthenaCharacter:AthenaCharacter_051",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_052": {
+        "templateId": "AthenaCharacter:AthenaCharacter_052",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_053": {
+        "templateId": "AthenaCharacter:AthenaCharacter_053",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_054": {
+        "templateId": "AthenaCharacter:AthenaCharacter_054",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_055": {
+        "templateId": "AthenaCharacter:AthenaCharacter_055",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_056": {
+        "templateId": "AthenaCharacter:AthenaCharacter_056",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_057": {
+        "templateId": "AthenaCharacter:AthenaCharacter_057",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_058": {
+        "templateId": "AthenaCharacter:AthenaCharacter_058",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_059": {
+        "templateId": "AthenaCharacter:AthenaCharacter_059",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_060": {
+        "templateId": "AthenaCharacter:AthenaCharacter_060",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_061": {
+        "templateId": "AthenaCharacter:AthenaCharacter_061",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_062": {
+        "templateId": "AthenaCharacter:AthenaCharacter_062",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_063": {
+        "templateId": "AthenaCharacter:AthenaCharacter_063",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_064": {
+        "templateId": "AthenaCharacter:AthenaCharacter_064",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_065": {
+        "templateId": "AthenaCharacter:AthenaCharacter_065",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_066": {
+        "templateId": "AthenaCharacter:AthenaCharacter_066",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_067": {
+        "templateId": "AthenaCharacter:AthenaCharacter_067",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_068": {
+        "templateId": "AthenaCharacter:AthenaCharacter_068",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_069": {
+        "templateId": "AthenaCharacter:AthenaCharacter_069",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_070": {
+        "templateId": "AthenaCharacter:AthenaCharacter_070",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_071": {
+        "templateId": "AthenaCharacter:AthenaCharacter_071",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_072": {
+        "templateId": "AthenaCharacter:AthenaCharacter_072",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_073": {
+        "templateId": "AthenaCharacter:AthenaCharacter_073",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_074": {
+        "templateId": "AthenaCharacter:AthenaCharacter_074",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_075": {
+        "templateId": "AthenaCharacter:AthenaCharacter_075",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_076": {
+        "templateId": "AthenaCharacter:AthenaCharacter_076",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_077": {
+        "templateId": "AthenaCharacter:AthenaCharacter_077",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_078": {
+        "templateId": "AthenaCharacter:AthenaCharacter_078",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_079": {
+        "templateId": "AthenaCharacter:AthenaCharacter_079",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_080": {
+        "templateId": "AthenaCharacter:AthenaCharacter_080",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_081": {
+        "templateId": "AthenaCharacter:AthenaCharacter_081",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_082": {
+        "templateId": "AthenaCharacter:AthenaCharacter_082",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_083": {
+        "templateId": "AthenaCharacter:AthenaCharacter_083",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_084": {
+        "templateId": "AthenaCharacter:AthenaCharacter_084",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_085": {
+        "templateId": "AthenaCharacter:AthenaCharacter_085",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_086": {
+        "templateId": "AthenaCharacter:AthenaCharacter_086",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_087": {
+        "templateId": "AthenaCharacter:AthenaCharacter_087",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_088": {
+        "templateId": "AthenaCharacter:AthenaCharacter_088",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_089": {
+        "templateId": "AthenaCharacter:AthenaCharacter_089",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_090": {
+        "templateId": "AthenaCharacter:AthenaCharacter_090",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_091": {
+        "templateId": "AthenaCharacter:AthenaCharacter_091",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_092": {
+        "templateId": "AthenaCharacter:AthenaCharacter_092",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_093": {
+        "templateId": "AthenaCharacter:AthenaCharacter_093",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_094": {
+        "templateId": "AthenaCharacter:AthenaCharacter_094",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_095": {
+        "templateId": "AthenaCharacter:AthenaCharacter_095",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_096": {
+        "templateId": "AthenaCharacter:AthenaCharacter_096",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_097": {
+        "templateId": "AthenaCharacter:AthenaCharacter_097",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_098": {
+        "templateId": "AthenaCharacter:AthenaCharacter_098",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_099": {
+        "templateId": "AthenaCharacter:AthenaCharacter_099",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:AthenaCharacter_100": {
+        "templateId": "AthenaCharacter:AthenaCharacter_100",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_001_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_001_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_002_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_002_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_003_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_003_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_004_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_004_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_005_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_005_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_015_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_015_Athena_Commando_F",
+        "attributes": {
+          "seen": true
+        },
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_017_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_017_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_018_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_018_Athena_Commando_M",
+        "attributes": {
+          "seen": true
+        },
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_024_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_024_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_025_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_025_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_026_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_026_Athena_Commando_M",
+        "attributes": {
+          "seen": true
+        },
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_028_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_028_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_030_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_030_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_036_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_036_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_055_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_055_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_062_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_062_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_063_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_063_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_064_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_064_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_066_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_066_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_082_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_082_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_081_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_081_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_088_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_088_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_092_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_092_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_072_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_072_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_076_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_076_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_075_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_075_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_054_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_054_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_059_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_059_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_060_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_060_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_045_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_045_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_014_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_014_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_037_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_037_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_038_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_038_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_040_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_040_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_098_Athena_Commando_M": {
+        "templateId": "AthenaCharacter:CID_098_Athena_Commando_M",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_099_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_099_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_097_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_097_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_091_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_091_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaCharacter:CID_083_Athena_Commando_F": {
+        "templateId": "AthenaCharacter:CID_083_Athena_Commando_F",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_001": {
+        "templateId": "AthenaBackpack:AthenaBackpack_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_002": {
+        "templateId": "AthenaBackpack:AthenaBackpack_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_003": {
+        "templateId": "AthenaBackpack:AthenaBackpack_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_004": {
+        "templateId": "AthenaBackpack:AthenaBackpack_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_005": {
+        "templateId": "AthenaBackpack:AthenaBackpack_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_006": {
+        "templateId": "AthenaBackpack:AthenaBackpack_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_007": {
+        "templateId": "AthenaBackpack:AthenaBackpack_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_008": {
+        "templateId": "AthenaBackpack:AthenaBackpack_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_009": {
+        "templateId": "AthenaBackpack:AthenaBackpack_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_010": {
+        "templateId": "AthenaBackpack:AthenaBackpack_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_011": {
+        "templateId": "AthenaBackpack:AthenaBackpack_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_012": {
+        "templateId": "AthenaBackpack:AthenaBackpack_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_013": {
+        "templateId": "AthenaBackpack:AthenaBackpack_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_014": {
+        "templateId": "AthenaBackpack:AthenaBackpack_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_015": {
+        "templateId": "AthenaBackpack:AthenaBackpack_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_016": {
+        "templateId": "AthenaBackpack:AthenaBackpack_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_017": {
+        "templateId": "AthenaBackpack:AthenaBackpack_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_018": {
+        "templateId": "AthenaBackpack:AthenaBackpack_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_019": {
+        "templateId": "AthenaBackpack:AthenaBackpack_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_020": {
+        "templateId": "AthenaBackpack:AthenaBackpack_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_021": {
+        "templateId": "AthenaBackpack:AthenaBackpack_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_022": {
+        "templateId": "AthenaBackpack:AthenaBackpack_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_023": {
+        "templateId": "AthenaBackpack:AthenaBackpack_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_024": {
+        "templateId": "AthenaBackpack:AthenaBackpack_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_025": {
+        "templateId": "AthenaBackpack:AthenaBackpack_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_026": {
+        "templateId": "AthenaBackpack:AthenaBackpack_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_027": {
+        "templateId": "AthenaBackpack:AthenaBackpack_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_028": {
+        "templateId": "AthenaBackpack:AthenaBackpack_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_029": {
+        "templateId": "AthenaBackpack:AthenaBackpack_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_030": {
+        "templateId": "AthenaBackpack:AthenaBackpack_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_031": {
+        "templateId": "AthenaBackpack:AthenaBackpack_031",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_032": {
+        "templateId": "AthenaBackpack:AthenaBackpack_032",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_033": {
+        "templateId": "AthenaBackpack:AthenaBackpack_033",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_034": {
+        "templateId": "AthenaBackpack:AthenaBackpack_034",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_035": {
+        "templateId": "AthenaBackpack:AthenaBackpack_035",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_036": {
+        "templateId": "AthenaBackpack:AthenaBackpack_036",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_037": {
+        "templateId": "AthenaBackpack:AthenaBackpack_037",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_038": {
+        "templateId": "AthenaBackpack:AthenaBackpack_038",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_039": {
+        "templateId": "AthenaBackpack:AthenaBackpack_039",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_040": {
+        "templateId": "AthenaBackpack:AthenaBackpack_040",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_041": {
+        "templateId": "AthenaBackpack:AthenaBackpack_041",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_042": {
+        "templateId": "AthenaBackpack:AthenaBackpack_042",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_043": {
+        "templateId": "AthenaBackpack:AthenaBackpack_043",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_044": {
+        "templateId": "AthenaBackpack:AthenaBackpack_044",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_045": {
+        "templateId": "AthenaBackpack:AthenaBackpack_045",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_046": {
+        "templateId": "AthenaBackpack:AthenaBackpack_046",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_047": {
+        "templateId": "AthenaBackpack:AthenaBackpack_047",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_048": {
+        "templateId": "AthenaBackpack:AthenaBackpack_048",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_049": {
+        "templateId": "AthenaBackpack:AthenaBackpack_049",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:AthenaBackpack_050": {
+        "templateId": "AthenaBackpack:AthenaBackpack_050",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:bid_003": {
+        "templateId": "AthenaBackpack:bid_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:bid_005": {
+        "templateId": "AthenaBackpack:bid_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:bid_006": {
+        "templateId": "AthenaBackpack:bid_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:bid_007": {
+        "templateId": "AthenaBackpack:bid_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBackpack:bid_010": {
+        "templateId": "AthenaBackpack:bid_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_001": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_002": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_003": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_004": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_005": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_006": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_007": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_008": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_009": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_010": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_011": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_012": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_013": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_014": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_015": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_016": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_017": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_018": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_019": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_020": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_021": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_022": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_023": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_024": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_025": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_026": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_027": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_028": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_029": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_030": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_031": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_031",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_032": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_032",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_033": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_033",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_034": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_034",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_035": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_035",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_036": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_036",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_037": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_037",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_038": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_038",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_039": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_039",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_040": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_040",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_041": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_041",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_042": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_042",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_043": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_043",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_044": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_044",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_045": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_045",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_046": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_046",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_047": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_047",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_048": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_048",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_049": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_049",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:AthenaPickaxe_050": {
+        "templateId": "AthenaPickaxe:AthenaPickaxe_050",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:pickaxe_id_001_TeslaCoil": {
+        "templateId": "AthenaPickaxe:pickaxe_id_001_TeslaCoil",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPickaxe:pickaxe_id_002_AxeAxes": {
+        "templateId": "AthenaPickaxe:pickaxe_id_002_AxeAxes",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_001": {
+        "templateId": "AthenaGlider:AthenaGlider_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_002": {
+        "templateId": "AthenaGlider:AthenaGlider_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_003": {
+        "templateId": "AthenaGlider:AthenaGlider_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_004": {
+        "templateId": "AthenaGlider:AthenaGlider_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_005": {
+        "templateId": "AthenaGlider:AthenaGlider_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_006": {
+        "templateId": "AthenaGlider:AthenaGlider_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_007": {
+        "templateId": "AthenaGlider:AthenaGlider_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_008": {
+        "templateId": "AthenaGlider:AthenaGlider_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_009": {
+        "templateId": "AthenaGlider:AthenaGlider_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_010": {
+        "templateId": "AthenaGlider:AthenaGlider_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_011": {
+        "templateId": "AthenaGlider:AthenaGlider_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_012": {
+        "templateId": "AthenaGlider:AthenaGlider_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_013": {
+        "templateId": "AthenaGlider:AthenaGlider_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_014": {
+        "templateId": "AthenaGlider:AthenaGlider_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_015": {
+        "templateId": "AthenaGlider:AthenaGlider_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_016": {
+        "templateId": "AthenaGlider:AthenaGlider_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_017": {
+        "templateId": "AthenaGlider:AthenaGlider_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_018": {
+        "templateId": "AthenaGlider:AthenaGlider_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_019": {
+        "templateId": "AthenaGlider:AthenaGlider_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_020": {
+        "templateId": "AthenaGlider:AthenaGlider_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_021": {
+        "templateId": "AthenaGlider:AthenaGlider_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_022": {
+        "templateId": "AthenaGlider:AthenaGlider_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_023": {
+        "templateId": "AthenaGlider:AthenaGlider_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_024": {
+        "templateId": "AthenaGlider:AthenaGlider_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_025": {
+        "templateId": "AthenaGlider:AthenaGlider_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_026": {
+        "templateId": "AthenaGlider:AthenaGlider_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_027": {
+        "templateId": "AthenaGlider:AthenaGlider_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_028": {
+        "templateId": "AthenaGlider:AthenaGlider_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_029": {
+        "templateId": "AthenaGlider:AthenaGlider_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_030": {
+        "templateId": "AthenaGlider:AthenaGlider_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_031": {
+        "templateId": "AthenaGlider:AthenaGlider_031",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_032": {
+        "templateId": "AthenaGlider:AthenaGlider_032",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_033": {
+        "templateId": "AthenaGlider:AthenaGlider_033",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_034": {
+        "templateId": "AthenaGlider:AthenaGlider_034",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_035": {
+        "templateId": "AthenaGlider:AthenaGlider_035",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_036": {
+        "templateId": "AthenaGlider:AthenaGlider_036",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_037": {
+        "templateId": "AthenaGlider:AthenaGlider_037",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_038": {
+        "templateId": "AthenaGlider:AthenaGlider_038",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_039": {
+        "templateId": "AthenaGlider:AthenaGlider_039",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_040": {
+        "templateId": "AthenaGlider:AthenaGlider_040",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_041": {
+        "templateId": "AthenaGlider:AthenaGlider_041",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_042": {
+        "templateId": "AthenaGlider:AthenaGlider_042",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_043": {
+        "templateId": "AthenaGlider:AthenaGlider_043",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_044": {
+        "templateId": "AthenaGlider:AthenaGlider_044",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_045": {
+        "templateId": "AthenaGlider:AthenaGlider_045",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_046": {
+        "templateId": "AthenaGlider:AthenaGlider_046",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_047": {
+        "templateId": "AthenaGlider:AthenaGlider_047",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_048": {
+        "templateId": "AthenaGlider:AthenaGlider_048",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_049": {
+        "templateId": "AthenaGlider:AthenaGlider_049",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:AthenaGlider_050": {
+        "templateId": "AthenaGlider:AthenaGlider_050",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaGlider:glider_id_001_Umbrella": {
+        "templateId": "AthenaGlider:glider_id_001_Umbrella",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_001": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_002": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_003": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_004": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_005": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_006": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_007": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_008": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_009": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_010": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_011": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_012": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_013": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_014": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_015": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_016": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_017": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_018": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_019": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_020": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_021": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_022": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_023": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_024": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_025": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_026": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_027": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_028": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_029": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceTransport:AthenaDanceTransport_030": {
+        "templateId": "AthenaDanceTransport:AthenaDanceTransport_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_001": {
+        "templateId": "AthenaDance:AthenaDance_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_002": {
+        "templateId": "AthenaDance:AthenaDance_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_003": {
+        "templateId": "AthenaDance:AthenaDance_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_004": {
+        "templateId": "AthenaDance:AthenaDance_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_005": {
+        "templateId": "AthenaDance:AthenaDance_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_006": {
+        "templateId": "AthenaDance:AthenaDance_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_007": {
+        "templateId": "AthenaDance:AthenaDance_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_008": {
+        "templateId": "AthenaDance:AthenaDance_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_009": {
+        "templateId": "AthenaDance:AthenaDance_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_010": {
+        "templateId": "AthenaDance:AthenaDance_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_011": {
+        "templateId": "AthenaDance:AthenaDance_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_012": {
+        "templateId": "AthenaDance:AthenaDance_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_013": {
+        "templateId": "AthenaDance:AthenaDance_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_014": {
+        "templateId": "AthenaDance:AthenaDance_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_015": {
+        "templateId": "AthenaDance:AthenaDance_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_016": {
+        "templateId": "AthenaDance:AthenaDance_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_017": {
+        "templateId": "AthenaDance:AthenaDance_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_018": {
+        "templateId": "AthenaDance:AthenaDance_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_019": {
+        "templateId": "AthenaDance:AthenaDance_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_020": {
+        "templateId": "AthenaDance:AthenaDance_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_021": {
+        "templateId": "AthenaDance:AthenaDance_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_022": {
+        "templateId": "AthenaDance:AthenaDance_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_023": {
+        "templateId": "AthenaDance:AthenaDance_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_024": {
+        "templateId": "AthenaDance:AthenaDance_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_025": {
+        "templateId": "AthenaDance:AthenaDance_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_026": {
+        "templateId": "AthenaDance:AthenaDance_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_027": {
+        "templateId": "AthenaDance:AthenaDance_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_028": {
+        "templateId": "AthenaDance:AthenaDance_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_029": {
+        "templateId": "AthenaDance:AthenaDance_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_030": {
+        "templateId": "AthenaDance:AthenaDance_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_031": {
+        "templateId": "AthenaDance:AthenaDance_031",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_032": {
+        "templateId": "AthenaDance:AthenaDance_032",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_033": {
+        "templateId": "AthenaDance:AthenaDance_033",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_034": {
+        "templateId": "AthenaDance:AthenaDance_034",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_035": {
+        "templateId": "AthenaDance:AthenaDance_035",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_036": {
+        "templateId": "AthenaDance:AthenaDance_036",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_037": {
+        "templateId": "AthenaDance:AthenaDance_037",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_038": {
+        "templateId": "AthenaDance:AthenaDance_038",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_039": {
+        "templateId": "AthenaDance:AthenaDance_039",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_040": {
+        "templateId": "AthenaDance:AthenaDance_040",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_041": {
+        "templateId": "AthenaDance:AthenaDance_041",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_042": {
+        "templateId": "AthenaDance:AthenaDance_042",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_043": {
+        "templateId": "AthenaDance:AthenaDance_043",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_044": {
+        "templateId": "AthenaDance:AthenaDance_044",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_045": {
+        "templateId": "AthenaDance:AthenaDance_045",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_046": {
+        "templateId": "AthenaDance:AthenaDance_046",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_047": {
+        "templateId": "AthenaDance:AthenaDance_047",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_048": {
+        "templateId": "AthenaDance:AthenaDance_048",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_049": {
+        "templateId": "AthenaDance:AthenaDance_049",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_050": {
+        "templateId": "AthenaDance:AthenaDance_050",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_051": {
+        "templateId": "AthenaDance:AthenaDance_051",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_052": {
+        "templateId": "AthenaDance:AthenaDance_052",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_053": {
+        "templateId": "AthenaDance:AthenaDance_053",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_054": {
+        "templateId": "AthenaDance:AthenaDance_054",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_055": {
+        "templateId": "AthenaDance:AthenaDance_055",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_056": {
+        "templateId": "AthenaDance:AthenaDance_056",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_057": {
+        "templateId": "AthenaDance:AthenaDance_057",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_058": {
+        "templateId": "AthenaDance:AthenaDance_058",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_059": {
+        "templateId": "AthenaDance:AthenaDance_059",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_060": {
+        "templateId": "AthenaDance:AthenaDance_060",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_061": {
+        "templateId": "AthenaDance:AthenaDance_061",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_062": {
+        "templateId": "AthenaDance:AthenaDance_062",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_063": {
+        "templateId": "AthenaDance:AthenaDance_063",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_064": {
+        "templateId": "AthenaDance:AthenaDance_064",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_065": {
+        "templateId": "AthenaDance:AthenaDance_065",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_066": {
+        "templateId": "AthenaDance:AthenaDance_066",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_067": {
+        "templateId": "AthenaDance:AthenaDance_067",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_068": {
+        "templateId": "AthenaDance:AthenaDance_068",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_069": {
+        "templateId": "AthenaDance:AthenaDance_069",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_070": {
+        "templateId": "AthenaDance:AthenaDance_070",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_071": {
+        "templateId": "AthenaDance:AthenaDance_071",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_072": {
+        "templateId": "AthenaDance:AthenaDance_072",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_073": {
+        "templateId": "AthenaDance:AthenaDance_073",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_074": {
+        "templateId": "AthenaDance:AthenaDance_074",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_075": {
+        "templateId": "AthenaDance:AthenaDance_075",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_076": {
+        "templateId": "AthenaDance:AthenaDance_076",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_077": {
+        "templateId": "AthenaDance:AthenaDance_077",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_078": {
+        "templateId": "AthenaDance:AthenaDance_078",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_079": {
+        "templateId": "AthenaDance:AthenaDance_079",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_080": {
+        "templateId": "AthenaDance:AthenaDance_080",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_081": {
+        "templateId": "AthenaDance:AthenaDance_081",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_082": {
+        "templateId": "AthenaDance:AthenaDance_082",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_083": {
+        "templateId": "AthenaDance:AthenaDance_083",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_084": {
+        "templateId": "AthenaDance:AthenaDance_084",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_085": {
+        "templateId": "AthenaDance:AthenaDance_085",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_086": {
+        "templateId": "AthenaDance:AthenaDance_086",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_087": {
+        "templateId": "AthenaDance:AthenaDance_087",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_088": {
+        "templateId": "AthenaDance:AthenaDance_088",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_089": {
+        "templateId": "AthenaDance:AthenaDance_089",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_090": {
+        "templateId": "AthenaDance:AthenaDance_090",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_091": {
+        "templateId": "AthenaDance:AthenaDance_091",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_092": {
+        "templateId": "AthenaDance:AthenaDance_092",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_093": {
+        "templateId": "AthenaDance:AthenaDance_093",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_094": {
+        "templateId": "AthenaDance:AthenaDance_094",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_095": {
+        "templateId": "AthenaDance:AthenaDance_095",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_096": {
+        "templateId": "AthenaDance:AthenaDance_096",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_097": {
+        "templateId": "AthenaDance:AthenaDance_097",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_098": {
+        "templateId": "AthenaDance:AthenaDance_098",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_099": {
+        "templateId": "AthenaDance:AthenaDance_099",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:AthenaDance_100": {
+        "templateId": "AthenaDance:AthenaDance_100",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_Breakdance": {
+        "templateId": "AthenaDance:eid_Breakdance",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_Floss": {
+        "templateId": "AthenaDance:eid_Floss",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_Dab": {
+        "templateId": "AthenaDance:eid_Dab",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_Robot": {
+        "templateId": "AthenaDance:eid_Robot",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_TakeTheL": {
+        "templateId": "AthenaDance:eid_TakeTheL",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_RideThePony": {
+        "templateId": "AthenaDance:eid_RideThePony",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_HipHop": {
+        "templateId": "AthenaDance:eid_HipHop",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_Byte": {
+        "templateId": "AthenaDance:eid_Byte",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_Tidy": {
+        "templateId": "AthenaDance:eid_Tidy",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_Fresh": {
+        "templateId": "AthenaDance:eid_Fresh",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDance:eid_Slide": {
+        "templateId": "AthenaDance:eid_Slide",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_001": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_002": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_003": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_004": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_005": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_006": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_007": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_008": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_009": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_010": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_011": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_012": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_013": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_014": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_015": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_016": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_017": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_018": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_019": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_020": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_021": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_022": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_023": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_024": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_025": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_026": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_027": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_028": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_029": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:AthenaLoadingScreen_030": {
+        "templateId": "AthenaLoadingScreen:AthenaLoadingScreen_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_001_BattlePassS1": {
+        "templateId": "AthenaLoadingScreen:lsid_001_BattlePassS1",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_002_BattlePassS2": {
+        "templateId": "AthenaLoadingScreen:lsid_002_BattlePassS2",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_003_BattlePassS3": {
+        "templateId": "AthenaLoadingScreen:lsid_003_BattlePassS3",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_004_BattlePassS4": {
+        "templateId": "AthenaLoadingScreen:lsid_004_BattlePassS4",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_005_BattlePassS5": {
+        "templateId": "AthenaLoadingScreen:lsid_005_BattlePassS5",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_006_BattlePassS6": {
+        "templateId": "AthenaLoadingScreen:lsid_006_BattlePassS6",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_007_BattlePassS7": {
+        "templateId": "AthenaLoadingScreen:lsid_007_BattlePassS7",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_008_BattlePassS8": {
+        "templateId": "AthenaLoadingScreen:lsid_008_BattlePassS8",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_009_BattlePassS9": {
+        "templateId": "AthenaLoadingScreen:lsid_009_BattlePassS9",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_010_BattlePassS10": {
+        "templateId": "AthenaLoadingScreen:lsid_010_BattlePassS10",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaLoadingScreen:lsid_011_BattlePassS11": {
+        "templateId": "AthenaLoadingScreen:lsid_011_BattlePassS11",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_001": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_002": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_003": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_004": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_005": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_006": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_007": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_008": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_009": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_010": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_011": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_012": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_013": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_014": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_015": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_016": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_017": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_018": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_019": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_020": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_021": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_022": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_023": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_024": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_025": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_026": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_027": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_028": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_029": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaMusicPack:AthenaMusicPack_030": {
+        "templateId": "AthenaMusicPack:AthenaMusicPack_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_001": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_002": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_003": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_004": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_005": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_006": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_007": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_008": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_009": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_010": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_011": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_012": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_013": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_014": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_015": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_016": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_017": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_018": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_019": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_020": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_021": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_022": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_023": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_024": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_025": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_026": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_027": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_028": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_029": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_030": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_031": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_031",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_032": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_032",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_033": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_033",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_034": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_034",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_035": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_035",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_036": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_036",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_037": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_037",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_038": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_038",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_039": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_039",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_040": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_040",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_041": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_041",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_042": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_042",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_043": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_043",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_044": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_044",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_045": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_045",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_046": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_046",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_047": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_047",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_048": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_048",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_049": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_049",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaItemWrap:AthenaItemWrap_050": {
+        "templateId": "AthenaItemWrap:AthenaItemWrap_050",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_001": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_002": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_003": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_004": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_005": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_006": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_007": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_008": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_009": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_010": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_011": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_012": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_013": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_014": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_015": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_016": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_017": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_018": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_019": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_020": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_021": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_022": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_023": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_024": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_025": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_026": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_027": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_028": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_029": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_030": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_031": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_031",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_032": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_032",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_033": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_033",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_034": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_034",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_035": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_035",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_036": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_036",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_037": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_037",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_038": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_038",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_039": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_039",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_040": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_040",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_041": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_041",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_042": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_042",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_043": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_043",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_044": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_044",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_045": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_045",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_046": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_046",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_047": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_047",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_048": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_048",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_049": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_049",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceSpray:AthenaDanceSpray_050": {
+        "templateId": "AthenaDanceSpray:AthenaDanceSpray_050",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_001": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_002": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_003": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_004": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_005": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_006": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_007": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_008": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_009": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_010": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_011": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_012": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_013": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_014": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_015": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_016": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_017": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_018": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_019": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaDanceToy:AthenaDanceToy_020": {
+        "templateId": "AthenaDanceToy:AthenaDanceToy_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPet:Pet_BoneY": {
+        "templateId": "AthenaPet:Pet_BoneY",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPet:Pet_Chipper": {
+        "templateId": "AthenaPet:Pet_Chipper",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPet:Pet_Smak": {
+        "templateId": "AthenaPet:Pet_Smak",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPet:Pet_Falcon": {
+        "templateId": "AthenaPet:Pet_Falcon",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaPet:Pet_PinkBear": {
+        "templateId": "AthenaPet:Pet_PinkBear",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_001": {
+        "templateId": "AthenaBanner:AthenaBanner_001",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_002": {
+        "templateId": "AthenaBanner:AthenaBanner_002",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_003": {
+        "templateId": "AthenaBanner:AthenaBanner_003",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_004": {
+        "templateId": "AthenaBanner:AthenaBanner_004",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_005": {
+        "templateId": "AthenaBanner:AthenaBanner_005",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_006": {
+        "templateId": "AthenaBanner:AthenaBanner_006",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_007": {
+        "templateId": "AthenaBanner:AthenaBanner_007",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_008": {
+        "templateId": "AthenaBanner:AthenaBanner_008",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_009": {
+        "templateId": "AthenaBanner:AthenaBanner_009",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_010": {
+        "templateId": "AthenaBanner:AthenaBanner_010",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_011": {
+        "templateId": "AthenaBanner:AthenaBanner_011",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_012": {
+        "templateId": "AthenaBanner:AthenaBanner_012",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_013": {
+        "templateId": "AthenaBanner:AthenaBanner_013",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_014": {
+        "templateId": "AthenaBanner:AthenaBanner_014",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_015": {
+        "templateId": "AthenaBanner:AthenaBanner_015",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_016": {
+        "templateId": "AthenaBanner:AthenaBanner_016",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_017": {
+        "templateId": "AthenaBanner:AthenaBanner_017",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_018": {
+        "templateId": "AthenaBanner:AthenaBanner_018",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_019": {
+        "templateId": "AthenaBanner:AthenaBanner_019",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_020": {
+        "templateId": "AthenaBanner:AthenaBanner_020",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_021": {
+        "templateId": "AthenaBanner:AthenaBanner_021",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_022": {
+        "templateId": "AthenaBanner:AthenaBanner_022",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_023": {
+        "templateId": "AthenaBanner:AthenaBanner_023",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_024": {
+        "templateId": "AthenaBanner:AthenaBanner_024",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_025": {
+        "templateId": "AthenaBanner:AthenaBanner_025",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_026": {
+        "templateId": "AthenaBanner:AthenaBanner_026",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_027": {
+        "templateId": "AthenaBanner:AthenaBanner_027",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_028": {
+        "templateId": "AthenaBanner:AthenaBanner_028",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_029": {
+        "templateId": "AthenaBanner:AthenaBanner_029",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_030": {
+        "templateId": "AthenaBanner:AthenaBanner_030",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_031": {
+        "templateId": "AthenaBanner:AthenaBanner_031",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_032": {
+        "templateId": "AthenaBanner:AthenaBanner_032",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_033": {
+        "templateId": "AthenaBanner:AthenaBanner_033",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_034": {
+        "templateId": "AthenaBanner:AthenaBanner_034",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_035": {
+        "templateId": "AthenaBanner:AthenaBanner_035",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_036": {
+        "templateId": "AthenaBanner:AthenaBanner_036",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_037": {
+        "templateId": "AthenaBanner:AthenaBanner_037",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_038": {
+        "templateId": "AthenaBanner:AthenaBanner_038",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_039": {
+        "templateId": "AthenaBanner:AthenaBanner_039",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_040": {
+        "templateId": "AthenaBanner:AthenaBanner_040",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_041": {
+        "templateId": "AthenaBanner:AthenaBanner_041",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_042": {
+        "templateId": "AthenaBanner:AthenaBanner_042",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_043": {
+        "templateId": "AthenaBanner:AthenaBanner_043",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_044": {
+        "templateId": "AthenaBanner:AthenaBanner_044",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_045": {
+        "templateId": "AthenaBanner:AthenaBanner_045",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_046": {
+        "templateId": "AthenaBanner:AthenaBanner_046",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_047": {
+        "templateId": "AthenaBanner:AthenaBanner_047",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_048": {
+        "templateId": "AthenaBanner:AthenaBanner_048",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_049": {
+        "templateId": "AthenaBanner:AthenaBanner_049",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_050": {
+        "templateId": "AthenaBanner:AthenaBanner_050",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_051": {
+        "templateId": "AthenaBanner:AthenaBanner_051",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_052": {
+        "templateId": "AthenaBanner:AthenaBanner_052",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_053": {
+        "templateId": "AthenaBanner:AthenaBanner_053",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_054": {
+        "templateId": "AthenaBanner:AthenaBanner_054",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_055": {
+        "templateId": "AthenaBanner:AthenaBanner_055",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_056": {
+        "templateId": "AthenaBanner:AthenaBanner_056",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_057": {
+        "templateId": "AthenaBanner:AthenaBanner_057",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_058": {
+        "templateId": "AthenaBanner:AthenaBanner_058",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_059": {
+        "templateId": "AthenaBanner:AthenaBanner_059",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_060": {
+        "templateId": "AthenaBanner:AthenaBanner_060",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_061": {
+        "templateId": "AthenaBanner:AthenaBanner_061",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_062": {
+        "templateId": "AthenaBanner:AthenaBanner_062",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_063": {
+        "templateId": "AthenaBanner:AthenaBanner_063",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_064": {
+        "templateId": "AthenaBanner:AthenaBanner_064",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_065": {
+        "templateId": "AthenaBanner:AthenaBanner_065",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_066": {
+        "templateId": "AthenaBanner:AthenaBanner_066",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_067": {
+        "templateId": "AthenaBanner:AthenaBanner_067",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_068": {
+        "templateId": "AthenaBanner:AthenaBanner_068",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_069": {
+        "templateId": "AthenaBanner:AthenaBanner_069",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_070": {
+        "templateId": "AthenaBanner:AthenaBanner_070",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_071": {
+        "templateId": "AthenaBanner:AthenaBanner_071",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_072": {
+        "templateId": "AthenaBanner:AthenaBanner_072",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_073": {
+        "templateId": "AthenaBanner:AthenaBanner_073",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_074": {
+        "templateId": "AthenaBanner:AthenaBanner_074",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_075": {
+        "templateId": "AthenaBanner:AthenaBanner_075",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_076": {
+        "templateId": "AthenaBanner:AthenaBanner_076",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_077": {
+        "templateId": "AthenaBanner:AthenaBanner_077",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_078": {
+        "templateId": "AthenaBanner:AthenaBanner_078",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_079": {
+        "templateId": "AthenaBanner:AthenaBanner_079",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_080": {
+        "templateId": "AthenaBanner:AthenaBanner_080",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_081": {
+        "templateId": "AthenaBanner:AthenaBanner_081",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_082": {
+        "templateId": "AthenaBanner:AthenaBanner_082",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_083": {
+        "templateId": "AthenaBanner:AthenaBanner_083",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_084": {
+        "templateId": "AthenaBanner:AthenaBanner_084",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_085": {
+        "templateId": "AthenaBanner:AthenaBanner_085",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_086": {
+        "templateId": "AthenaBanner:AthenaBanner_086",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_087": {
+        "templateId": "AthenaBanner:AthenaBanner_087",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_088": {
+        "templateId": "AthenaBanner:AthenaBanner_088",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_089": {
+        "templateId": "AthenaBanner:AthenaBanner_089",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_090": {
+        "templateId": "AthenaBanner:AthenaBanner_090",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_091": {
+        "templateId": "AthenaBanner:AthenaBanner_091",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_092": {
+        "templateId": "AthenaBanner:AthenaBanner_092",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_093": {
+        "templateId": "AthenaBanner:AthenaBanner_093",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_094": {
+        "templateId": "AthenaBanner:AthenaBanner_094",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_095": {
+        "templateId": "AthenaBanner:AthenaBanner_095",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_096": {
+        "templateId": "AthenaBanner:AthenaBanner_096",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_097": {
+        "templateId": "AthenaBanner:AthenaBanner_097",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_098": {
+        "templateId": "AthenaBanner:AthenaBanner_098",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_099": {
+        "templateId": "AthenaBanner:AthenaBanner_099",
+        "attributes": {},
+        "quantity": 1
+      },
+      "AthenaBanner:AthenaBanner_100": {
+        "templateId": "AthenaBanner:AthenaBanner_100",
+        "attributes": {},
+        "quantity": 1
+      }
+    },
+    "stats": {
+      "attributes": {
+        "season_num": 3,
+        "season_update": 0,
+        "book_level": 1,
+        "book_xp": 0,
+        "book_purchased": false,
+        "level": 1,
+        "xp": 0,
+        "accountLevel": 1,
+        "lifetime_wins": 0,
+        "battlestars": 0,
+        "battlestars_season_total": 0,
+        "style_points": 0,
+        "purchased_bp_offers": [],
+        "rested_xp": 0,
+        "rested_xp_mult": 1,
+        "rested_xp_overflow": 0,
+        "rested_xp_exchange": 1,
+        "rested_xp_cumulative": 0,
+        "favorite_character": "",
+        "favorite_backpack": "",
+        "favorite_pickaxe": "",
+        "favorite_glider": "",
+        "favorite_skydivecontrail": "",
+        "favorite_musicpack": "",
+        "favorite_loadingscreen": "",
+        "favorite_hat": "",
+        "favorite_victorypose": "",
+        "favorite_consumableemote": "",
+        "favorite_callingcard": "",
+        "favorite_spray": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "favorite_dance": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "favorite_itemwraps": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "banner_icon": "standardbanner15",
+        "banner_color": "defaultcolor15",
+        "mfa_reward_claimed": false,
+        "quest_manager": {
+          "dailyLoginInterval": "0001-01-01T00:00:00.000Z",
+          "dailyQuestRerolls": 1,
+          "questPoolStats": {}
+        },
+        "daily_rewards": {},
+        "past_seasons": [],
+        "season_match_boost": 0,
+        "season_friend_match_boost": 0,
+        "inventory_limit_bonus": 0,
+        "last_applied_loadout": "",
+        "active_loadout_index": 0,
+        "loadouts": [],
+        "loadout_presets": {}
+      }
+    }
+  }
+}
