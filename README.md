@@ -4,7 +4,7 @@ Universal Fortnite backend base written in TypeScript
 
 
 >[!NOTE] 
-> Since this backend only meant for testing things for my self and to obv use as base in teh future so dont exept this backend to have many features!
+> Since this backend only meant for testing things for my self and to obv use as base in the future so dont exept this backend to have many features!
 
 <details>
 

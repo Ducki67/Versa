@@ -34,19 +34,30 @@ app.get("/fortnite/api/cloudstorage/system/:file", (c) => {
   return c.body(content, 200, { "Content-Type": "application/octet-stream" });
 });
 
-app.get("/fortnite/api/cloudstorage/user/:accountId", (c) => c.json([]));
+app.get("/fortnite/api/cloudstorage/user/:accountId", (c) => {
+  const accountId = c.req.param("accountId");
+  const files = store.listUserFiles(accountId);
+  return c.json(files.map((f) => ({ uniqueFilename: f.filename, filename: f.filename, hash: sha1(f.content), hash256: sha256(f.content), length: f.content.length, contentType: "application/octet-stream", uploaded: f.uploaded, storageType: "S3", storageIds: {}, doNotCache: false })));
+});
 
 app.get("/fortnite/api/cloudstorage/user/:accountId/:file", (c) => {
   const accountId = c.req.param("accountId");
-  const data = store.getClientSettings(accountId);
-  if (!data) return c.body(c.req.param("file"), 200, { "Content-Type": "application/octet-stream" });
-  return c.body(new Uint8Array(data), 200, { "Content-Type": "application/octet-stream" });
+  const file = c.req.param("file");
+  const stored = store.getUserFile(accountId, file);
+  if (!stored) return c.json(errorResponse("com.epicgames.cloudstorage", "errors.com.epicgames.cloudstorage.file_not_found", "File not found"), 404);
+  return c.body(new Uint8Array(stored.content), 200, { "Content-Type": "application/octet-stream" });
 });
 
 app.put("/fortnite/api/cloudstorage/user/:accountId/:file", async (c) => {
   const accountId = c.req.param("accountId");
+  const file = c.req.param("file");
   const body = await c.req.arrayBuffer();
-  store.saveClientSettings(accountId, Buffer.from(body));
+  store.saveUserFile(accountId, file, Buffer.from(body));
+  return c.body(null, 204);
+});
+
+app.delete("/fortnite/api/cloudstorage/user/:accountId/:file", (c) => {
+  store.deleteUserFile(c.req.param("accountId"), c.req.param("file"));
   return c.body(null, 204);
 });
 

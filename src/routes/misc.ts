@@ -27,10 +27,18 @@ app.get("/lightswitch/api/service/bulk/status", (c) => c.json([{ serviceInstance
 app.post("/datarouter/api/v1/public/data", async (c) => c.body(null, 204));
 
 app.get("/waitingroom/api/waitingroom", (c) => c.json({ status: "disabled" }));
+app.post("/api/v1/user/setting", async (c) => c.body(null, 204));
 
 app.get("/region", (c) => c.json({ region: "NA", subregion: "US-East" }));
 
 app.get("/v1/epic-settings/public/users/:accountId/values", (c) => c.json({}));
+app.get("/api/v1/user/:accountId/settings", (c) => c.json({}));
+app.post("/api/v1/user/:accountId/settings", async (c) => c.body(null, 204));
+app.post("/fortnite/api/game/v2/profileToken/verify/:accountId", async (c) => c.body(null, 204));
+app.get("/fortnite/api/stats/account/:accountId", (c) => c.json({}));
+app.post("/fortnite/api/statsv2/query", async (c) => c.json([]));
+app.get("/fortnite/api/statsv2/account/:accountId", (c) => c.json({}));
+app.get("/api/v1/events/Fortnite/download/:accountId", (c) => c.json({}));
 
 app.get("/account/api/epicdomains/ssodomains", (c) => c.json(["unrealengine.com", "unrealtournament.com", "fortnite.com", "epicgames.com"]));
 

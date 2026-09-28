@@ -224,11 +224,27 @@ app.get("/account/api/oauth/authorization", async (c) => {
   return c.json({ sandbox_id: "fn", token_type: "bearer", client_id: decoded.clid, expires_in: 28800, expires_at: new Date(Date.now() + 28800000).toISOString(), app: "fortnite", in_app_id: decoded.sub, account_id: decoded.sub });
 });
 
-app.post("/account/api/public/account/:accountId/device-auth", (c) => c.json({ deviceId: makeID(), accountId: c.req.param("accountId"), secret: makeID(), created: new Date().toISOString() }));
+app.post("/account/api/public/account/:accountId/device-auth", async (c) => {
+  const accountId = c.req.param("accountId");
+  const user = store.getAccount(accountId);
+  if (!user) return c.json(errorResponse("com.epicgames.account", "errors.com.epicgames.account.not_found", "Account not found"), 404);
+  const device = { deviceId: makeID().replace(/-/g, ""), accountId, secret: generateExchangeCode(), created: new Date().toISOString(), lastAccess: new Date().toISOString() };
+  store.saveDeviceAuth(device);
+  return c.json(device);
+});
 
-app.get("/account/api/public/account/:accountId/device-auth", (c) => c.json([]));
+app.get("/account/api/public/account/:accountId/device-auth", (c) => c.json(store.listDeviceAuths(c.req.param("accountId"))));
 
-app.get("/account/api/public/account/:accountId/device-auth/:deviceId", (c) => c.json({ deviceId: c.req.param("deviceId"), accountId: c.req.param("accountId"), secret: makeID(), created: new Date().toISOString() }));
+app.get("/account/api/public/account/:accountId/device-auth/:deviceId", (c) => {
+  const device = store.getDeviceAuth(c.req.param("accountId"), c.req.param("deviceId"));
+  if (!device) return c.json(errorResponse("com.epicgames.account", "errors.com.epicgames.account.not_found", "Device auth not found"), 404);
+  return c.json(device);
+});
+
+app.delete("/account/api/public/account/:accountId/device-auth/:deviceId", (c) => {
+  store.deleteDeviceAuth(c.req.param("accountId"), c.req.param("deviceId"));
+  return c.body(null, 204);
+});
 
 app.get("/account/api/public/account/:accountId/externalAuths", (c) => c.json([]));
 

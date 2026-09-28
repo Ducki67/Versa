@@ -1,0 +1,27 @@
+{
+  "accountId": "aa6f2a38e3cd472990165d5ebb1273d5",
+  "profileId": "campaign",
+  "rvn": 4,
+  "commandRevision": 3,
+  "data": {
+    "created": "2026-09-28T15:46:18.053Z",
+    "wipeNumber": 1,
+    "version": "versa_v1",
+    "items": {},
+    "stats": {
+      "attributes": {
+        "quest_manager": {},
+        "world_results": [],
+        "homebase": {
+          "townName": "Homebase",
+          "bannerIconId": "StandardBanner15",
+          "bannerColorId": "DefaultColor15"
+        },
+        "homebase_name": "Homebase",
+        "client_settings": {
+          "pinnedQuestInstances": []
+        }
+      }
+    }
+  }
+}

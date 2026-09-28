@@ -1,0 +1,10 @@
+{
+  "accountId": "d2a3160c-b70e-469f-8670-c72d137112c1",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkMmEzMTYwYy1iNzBlLTQ2OWYtODY3MC1jNzJkMTM3MTEyYzEiLCJjbGlkIjoiZWM2ODRiOGM2ODdmNDc5ZmFkZWEzY2IyYWQ4M2Y1YzYiLCJhbSI6ImNsaWVudF9jcmVkZW50aWFscyIsImR2aWQiOiIwZTVlM2QxYy05ODVmLTQ4MzMtOWRhOC0zZTQyODhkN2I1N2YiLCJkbiI6IkZvcnRuaXRlIFBDIEdhbWUgQ2xpZW50IiwiYXBwIjoiZm9ydG5pdGUiLCJzZWMiOiJmb3J0bml0ZSIsInQiOiJyIiwiY3JlYXRpb25fZGF0ZSI6IjIwMjYtMDktMTlUMjE6Mjg6NTkuNDUwWiIsImhvdXJzX2V4cGlyZSI6MjQsImlhdCI6MTc4OTg1MzMzOSwiZXhwIjoxNzg5OTM5NzM5fQ.VfV1TOmtsg-wUnjEoCkPOn1aiCpHfAVLtuW0JCE7ioI",
+  "type": "refresh",
+  "clientId": "ec684b8c687f479fadea3cb2ad83f5c6",
+  "deviceId": "0e5e3d1c-985f-4833-9da8-3e4288d7b57f",
+  "authMethod": "client_credentials",
+  "displayName": "Fortnite PC Game Client",
+  "expiresAt": "2026-09-20T21:28:59.451Z"
+}

@@ -1,0 +1,10 @@
+{
+  "accountId": "aa6f2a38e3cd472990165d5ebb1273d5",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYTZmMmEzOGUzY2Q0NzI5OTAxNjVkNWViYjEyNzNkNSIsImNsaWQiOiJlYzY4NGI4YzY4N2Y0NzlmYWRlYTNjYjJhZDgzZjVjNiIsImFtIjoicGFzc3dvcmQiLCJkdmlkIjoiODcyNzEzY2UtODA5OS00YzQ2LThmZGYtNDBkMTIwN2UyY2E4IiwiZG4iOiJzc2QiLCJhcHAiOiJmb3J0bml0ZSIsInNlYyI6ImZvcnRuaXRlIiwidCI6InIiLCJjcmVhdGlvbl9kYXRlIjoiMjAyNi0wOS0yOFQxNTo0NjoxNS4zMzRaIiwiaG91cnNfZXhwaXJlIjoyNCwianRpIjoiYzU4YWRlZGQtYTBmMi00M2I2LWFmNzctMTcwNWZhNGNkNGFjIiwiaWF0IjoxNzkwNjEwMzc1LCJleHAiOjE3OTA2OTY3NzV9.lD1J7ZfHCYfc6-kxs3uacXr7od6gv3n4B5H_5yDg2Io",
+  "type": "refresh",
+  "clientId": "ec684b8c687f479fadea3cb2ad83f5c6",
+  "deviceId": "872713ce-8099-4c46-8fdf-40d1207e2ca8",
+  "authMethod": "password",
+  "displayName": "ssd",
+  "expiresAt": "2026-09-29T15:46:15.335Z"
+}
