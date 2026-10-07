@@ -42,11 +42,14 @@ export const playerSessions = new Map<string, string>();
 const SERVER_IP = (process.env.GAMESERVER_IP || "127.0.0.1:7777").split(":")[0] || "127.0.0.1";
 const SERVER_PORT = parseInt((process.env.GAMESERVER_IP || "127.0.0.1:7777").split(":")[1] || "7777", 10) || 7777;
 const MATCHMAKER_RAW = process.env.MATCHMAKER_IP || "ws://127.0.0.1";
-const MATCHMAKER_PORT = parseInt(process.env.MATCHMAKER_PORT || "80", 10) || 80;
+
+function matchmakerPort(): number {
+  return parseInt(process.env.MATCHMAKER_PORT || "80", 10) || 80;
+}
 
 function serviceUrl(): string {
   if (/:\d+$/.test(MATCHMAKER_RAW)) return MATCHMAKER_RAW;
-  return `${MATCHMAKER_RAW}:${MATCHMAKER_PORT}`;
+  return `${MATCHMAKER_RAW}:${matchmakerPort()}`;
 }
 
 function normalizeRegion(value: unknown): string {
@@ -292,7 +295,7 @@ app.get("/fortnite/api/game/v2/matchmaking/list", (c) => {
   });
 });
 
-app.get("/fortnite/api/matchmaking/session/findPlayer/*", (c) => c.body(null, 204));
+app.get("/fortnite/api/matchmaking/session/findPlayer/*", (c) => c.json([]));
 
 app.get("/fortnite/api/game/v2/matchmaking/account/:accountId/session/:sessionId", (c) => {
   return c.json({

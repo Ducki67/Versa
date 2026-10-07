@@ -10,6 +10,7 @@ import { ProfileChange } from "../types";
 const app = new Hono();
 
 const LOCKER_ID = "sandbox_loadout";
+const FULL_LOCKER_COUNT = FULL_LOCKER.length;
 
 function statChange(name: string, value: unknown): ProfileChange {
   return { changeType: "statModified", attributeName: name, attributeValue: value, quantity: 0, items: {}, profile: {} } as unknown as ProfileChange;
@@ -125,6 +126,17 @@ function getFullLockerItems(): Record<string, Record<string, unknown>> {
   return items;
 }
 
+function getStarterLockerItems(): Record<string, Record<string, unknown>> {
+  const items: Record<string, Record<string, unknown>> = {};
+  const want = FULL_LOCKER.slice(0, 150);
+  for (const def of want) {
+    items[makeID()] = { templateId: def.templateId, attributes: cosmeticAttributes(def.variants), quantity: 1 };
+  }
+  ensureDefaults(items);
+  ensureLocker(items);
+  return items;
+}
+
 function migrateOldItems(items: Record<string, Record<string, unknown>>): boolean {
   let migrated = false;
   const next: Record<string, Record<string, unknown>> = {};
@@ -144,8 +156,8 @@ function migrateOldItems(items: Record<string, Record<string, unknown>>): boolea
   return migrated;
 }
 
-function getDefaultAthenaData(season: number = 1): Record<string, unknown> {
-  const items = getFullLockerItems();
+function getDefaultAthenaData(season: number = 1, legacy: boolean = false): Record<string, unknown> {
+  const items = legacy ? getStarterLockerItems() : getFullLockerItems();
   return {
     created: timeAsISO(),
     wipeNumber: 1,
@@ -249,6 +261,84 @@ function getDefaultCampaignData(): Record<string, unknown> { return { created: t
 function getDefaultCommonPublicData(): Record<string, unknown> { return { created: timeAsISO(), wipeNumber: 1, version: "versa_v1", items: {}, stats: { attributes: { banner_icon: "StandardBanner15", banner_color: "DefaultColor15", homebase_name: "Homebase", skydive_contrail: "" } } }; }
 function getDefaultMetadataData(): Record<string, unknown> { return { created: timeAsISO(), wipeNumber: 1, version: "versa_v1", items: {}, stats: { attributes: {} } }; }
 
+const EXPEDITION_POOL: Array<{ templateId: string; slot: string; minPower: number; maxPower: number; durationMin: number }> = [
+  { templateId: "Expedition:expedition_sea_survivorscouting_short_t01", slot: "expedition.generation.sea.t01_0", minPower: 6, maxPower: 120, durationMin: 90 },
+  { templateId: "Expedition:expedition_sea_supplyrun_short_t01", slot: "expedition.generation.sea.t01_1", minPower: 6, maxPower: 120, durationMin: 90 },
+  { templateId: "Expedition:expedition_sea_supplyrun_medium_t02", slot: "expedition.generation.sea.t02_0", minPower: 15, maxPower: 160, durationMin: 150 },
+  { templateId: "Expedition:expedition_sea_survivorscouting_medium_t02", slot: "expedition.generation.sea.t02_1", minPower: 15, maxPower: 160, durationMin: 150 },
+  { templateId: "Expedition:expedition_sea_supplyrun_long_t03", slot: "expedition.generation.sea.t03_0", minPower: 23, maxPower: 200, durationMin: 240 },
+  { templateId: "Expedition:expedition_sea_survivorscouting_medium_t03", slot: "expedition.generation.sea.t03_1", minPower: 23, maxPower: 200, durationMin: 240 },
+  { templateId: "Expedition:expedition_sea_supplyrun_long_t04", slot: "expedition.generation.sea.t04_0", minPower: 34, maxPower: 240, durationMin: 360 },
+  { templateId: "Expedition:expedition_supplyrun_short_t01", slot: "expedition.generation.land.t01_0", minPower: 6, maxPower: 120, durationMin: 90 },
+  { templateId: "Expedition:expedition_supplyrun_medium_t02", slot: "expedition.generation.land.t02_0", minPower: 15, maxPower: 160, durationMin: 150 },
+  { templateId: "Expedition:expedition_supplyrun_long_t03", slot: "expedition.generation.land.t03_0", minPower: 23, maxPower: 200, durationMin: 240 },
+  { templateId: "Expedition:expedition_survivorscouting_long_t03", slot: "expedition.generation.land.t03_1", minPower: 23, maxPower: 200, durationMin: 240 },
+  { templateId: "Expedition:expedition_survivorscouting_long_t04", slot: "expedition.generation.land.t04_0", minPower: 34, maxPower: 240, durationMin: 360 },
+  { templateId: "Expedition:expedition_air_survivorscouting_long_t02", slot: "expedition.generation.air.t02_0", minPower: 15, maxPower: 160, durationMin: 150 },
+  { templateId: "Expedition:expedition_air_survivorscouting_medium_t03", slot: "expedition.generation.air.t03_0", minPower: 23, maxPower: 200, durationMin: 240 },
+  { templateId: "Expedition:expedition_air_survivorscouting_long_t04", slot: "expedition.generation.air.t04_0", minPower: 34, maxPower: 240, durationMin: 360 },
+  { templateId: "Expedition:expedition_air_supplyrun_long_t02", slot: "expedition.generation.air.t02_1", minPower: 15, maxPower: 160, durationMin: 150 },
+  { templateId: "Expedition:expedition_air_supplyrun_long_t03", slot: "expedition.generation.air.t03_1", minPower: 23, maxPower: 200, durationMin: 240 },
+  { templateId: "Expedition:expedition_air_supplyrun_long_t04", slot: "expedition.generation.air.t04_1", minPower: 34, maxPower: 240, durationMin: 360 },
+  { templateId: "Expedition:expedition_choppingwood_t00", slot: "expedition.generation.choppingwood", minPower: 1, maxPower: 40, durationMin: 30 },
+  { templateId: "Expedition:expedition_miningore_t00", slot: "expedition.generation.miningore", minPower: 1, maxPower: 40, durationMin: 30 },
+];
+
+function makeExpeditionItem(def: (typeof EXPEDITION_POOL)[number]): Record<string, unknown> {
+  const start = new Date();
+  const end = new Date(start.getTime() + def.durationMin * 60000);
+  return {
+    templateId: def.templateId,
+    attributes: {
+      expedition_expiration_start_time: start.toISOString(),
+      expedition_expiration_end_time: end.toISOString(),
+      expedition_criteria: [],
+      level: 1,
+      expedition_max_target_power: def.maxPower,
+      expedition_min_target_power: def.minPower,
+      expedition_slot_id: def.slot,
+    },
+    quantity: 1,
+  };
+}
+
+function refreshExpeditionItems(items: Record<string, Record<string, unknown>>, changes: ProfileChange[] | null): boolean {
+  const now = Date.now();
+  let dirty = false;
+  const usedSlots = new Set<string>();
+  for (const [id, item] of Object.entries(items)) {
+    const tid = String((item as Record<string, unknown>).templateId || "");
+    if (!tid.toLowerCase().startsWith("expedition:")) continue;
+    const attrs = (item as Record<string, unknown>).attributes as Record<string, unknown>;
+    const end = Date.parse(String(attrs.expedition_expiration_end_time || ""));
+    const started = attrs.expedition_start_time !== undefined;
+    if (!started && !Number.isNaN(end) && end <= now) {
+      delete items[id];
+      dirty = true;
+      if (changes) changes.push({ changeType: "itemRemoved", itemId: id } as unknown as ProfileChange);
+    } else {
+      const slot = String(attrs.expedition_slot_id || "");
+      if (slot) usedSlots.add(slot);
+    }
+  }
+  let active = 0;
+  for (const item of Object.values(items)) {
+    if (String((item as Record<string, unknown>).templateId || "").toLowerCase().startsWith("expedition:")) active++;
+  }
+  const shuffled = [...EXPEDITION_POOL].sort(() => Math.random() - 0.5);
+  for (const def of shuffled) {
+    if (active >= 6) break;
+    if (usedSlots.has(def.slot)) continue;
+    const id = makeID();
+    items[id] = makeExpeditionItem(def) as Record<string, unknown> as never;
+    usedSlots.add(def.slot);
+    active++;
+    dirty = true;
+    if (changes) changes.push({ changeType: "itemAdded", itemId: id, item: items[id] } as unknown as ProfileChange);
+  }
+  return dirty;
+}
+
 function normalizeProfileId(profileId: string): string {
   if (profileId === "profile0" || profileId === "campaign") return "campaign";
   if (profileId === "common_public") return "common_public";
@@ -273,7 +363,7 @@ function getOrCreateProfile(accountId: string, profileId: string, version?: Retu
     const season = version?.season ?? getSeasonFromBuild(build);
     const mtxPlatform = getMtxPlatform(version?.platform || "Windows");
     switch (normalizedId) {
-      case "athena": defaultData = getDefaultAthenaData(season); break;
+      case "athena": defaultData = getDefaultAthenaData(season, build < 4); break;
       case "common_core": defaultData = getDefaultCommonCoreData(mtxPlatform); break;
       case "common_public": defaultData = getDefaultCommonPublicData(); break;
       case "campaign": defaultData = getDefaultCampaignData(); break;
@@ -283,6 +373,9 @@ function getOrCreateProfile(accountId: string, profileId: string, version?: Retu
       default: defaultData = { created: timeAsISO(), wipeNumber: 1, version: "versa_v1", items: {}, stats: { attributes: {} } };
     }
     profile = { accountId, profileId: normalizedId, rvn: 1, commandRevision: 0, data: defaultData };
+    if (normalizedId === "campaign") {
+      refreshExpeditionItems(defaultData.items as Record<string, Record<string, unknown>>, null);
+    }
     store.saveProfile(profile);
   } else {
     const dataAny = profile.data as Record<string, unknown>;
@@ -290,23 +383,36 @@ function getOrCreateProfile(accountId: string, profileId: string, version?: Retu
     if (!dataAny.stats || typeof dataAny.stats !== "object") (dataAny as Record<string, unknown>).stats = { attributes: {} };
     const items = dataAny.items as Record<string, Record<string, unknown>>;
     let dirty = migrateOldItems(items);
+    if (normalizedId === "campaign") {
+      if (refreshExpeditionItems(items, null)) dirty = true;
+    }
     if (normalizedId === "athena") {
-      const before = JSON.stringify(items[LOCKER_ID] || null);
       ensureLocker(items);
       ensureDefaults(items);
+      if (build >= 4) {
       const ownedCount = Object.keys(items).length;
-      if (ownedCount < FULL_LOCKER.length) {
-        const owned = new Set(Object.values(items).map((i) => String(i.templateId || "").toLowerCase()));
-        for (const def of FULL_LOCKER) {
-          if (!owned.has(def.templateId.toLowerCase())) {
-            items[makeID()] = { templateId: def.templateId, attributes: cosmeticAttributes(def.variants), quantity: 1 };
-            dirty = true;
+      if (ownedCount < FULL_LOCKER_COUNT) {
+        const owned = new Set<string>();
+        for (const key of Object.keys(items)) {
+          const tid = (items[key] as Record<string, unknown>).templateId;
+          if (typeof tid === "string" && tid) owned.add(tid.toLowerCase());
+        }
+        if (owned.size < FULL_LOCKER_COUNT) {
+          for (const def of FULL_LOCKER) {
+            if (!owned.has(def.templateId.toLowerCase())) {
+              items[makeID()] = { templateId: def.templateId, attributes: cosmeticAttributes(def.variants), quantity: 1 };
+              dirty = true;
+            }
           }
         }
+      } else {
+        const locker = items[LOCKER_ID] as Record<string, unknown> | undefined;
+        if (!locker) dirty = true;
+      }
       }
       const attrs = ((dataAny.stats as Record<string, unknown>).attributes as Record<string, unknown>) || {};
-      if (attrs.last_applied_loadout === undefined) attrs.last_applied_loadout = LOCKER_ID;
-      if (attrs.loadouts === undefined) attrs.loadouts = [LOCKER_ID];
+      if (attrs.last_applied_loadout === undefined) { attrs.last_applied_loadout = LOCKER_ID; dirty = true; }
+      if (attrs.loadouts === undefined) { attrs.loadouts = [LOCKER_ID]; dirty = true; }
       if (attrs.favorite_pickaxe === undefined) attrs.favorite_pickaxe = "AthenaPickaxe:DefaultPickaxe";
       if (attrs.favorite_glider === undefined) attrs.favorite_glider = "AthenaGlider:DefaultGlider";
       if (attrs.favorite_dance === undefined) attrs.favorite_dance = ["", "", "", "", "", ""];
@@ -314,7 +420,6 @@ function getOrCreateProfile(accountId: string, profileId: string, version?: Retu
       if (attrs.banner_icon === undefined) attrs.banner_icon = "StandardBanner15";
       if (attrs.banner_color === undefined) attrs.banner_color = "DefaultColor15";
       (dataAny.stats as Record<string, unknown>).attributes = attrs;
-      if (JSON.stringify(items[LOCKER_ID]) !== before) dirty = true;
     }
     if (dirty) store.saveProfile(profile);
   }
@@ -431,7 +536,24 @@ app.post("/fortnite/api/game/v2/profile/:accountId/client/:operation", async (c)
   switch (operation) {
     case "QueryProfile": {
       if (Number.isNaN(rvnParam) || rvnParam < 0 || rvnParam !== rvn) {
-        changes.push({ changeType: "fullProfileUpdate", profile: buildProfileObject(accountId, profileId, data, rvn, cmdRev) } as unknown as ProfileChange);
+        let outData = data;
+        if (build < 4 && normalizedId === "athena") {
+          const allItems = (data as Record<string, unknown>).items as Record<string, Record<string, unknown>>;
+          const keys = Object.keys(allItems);
+          if (keys.length > 600) {
+            const kept: Record<string, Record<string, unknown>> = {};
+            if (allItems[LOCKER_ID]) kept[LOCKER_ID] = allItems[LOCKER_ID] as Record<string, unknown>;
+            let n = 0;
+            for (const k of keys) {
+              if (k === LOCKER_ID) continue;
+              if (n >= 500) break;
+              kept[k] = allItems[k] as Record<string, unknown>;
+              n++;
+            }
+            outData = { ...(data as Record<string, unknown>), items: kept } as Record<string, unknown>;
+          }
+        }
+        changes.push({ changeType: "fullProfileUpdate", profile: buildProfileObject(accountId, profileId, outData, rvn, cmdRev) } as unknown as ProfileChange);
       }
       break;
     }
@@ -771,8 +893,22 @@ app.post("/fortnite/api/game/v2/profile/:accountId/client/:operation", async (c)
       if (touched) { newRvn++; newCmdRev++; }
       break;
     }
-    case "RefreshExpeditions": { newRvn++; newCmdRev++; changes.push(statChange("expeditionRefresh", timeAsISO())); break; }
-    case "GetMcpTimeForLogin": break;
+    case "RefreshExpeditions": {
+      newRvn++; newCmdRev++;
+      const before = changes.length;
+      refreshExpeditionItems(items, changes);
+      if (build < 4 && changes.length === before) {
+        changes.push({ changeType: "fullProfileUpdate", profile: buildProfileObject(accountId, profileId, data, newRvn, newCmdRev) } as unknown as ProfileChange);
+      }
+      break;
+    }
+    case "GetMcpTimeForLogin": {
+      if (build < 4) {
+        newRvn++; newCmdRev++;
+        changes.push({ changeType: "fullProfileUpdate", profile: buildProfileObject(accountId, profileId, data, newRvn, newCmdRev) } as unknown as ProfileChange);
+      }
+      break;
+    }
     case "IncrementNamedCounterStat": { newRvn++; newCmdRev++; changes.push(statChange("counterIncrement", timeAsISO())); break; }
     case "SetHardcoreModifier": { newRvn++; newCmdRev++; changes.push(statChange("hardcoreModifier", (body.modifier as number) ?? 0)); break; }
     case "SetPartyAssistQuest": {
@@ -819,7 +955,6 @@ app.post("/fortnite/api/game/v2/profile/:accountId/client/:operation", async (c)
     case "ClaimMfaEnabled":
     case "ClaimImportFriends":
     case "GetQuota":
-    case "GetMcpTimeForLogin":
     case "SetForcedIntroPlayed":
     case "SetReceiveGiftsEnabled":
     case "RedeemRealMoneyPurchases":

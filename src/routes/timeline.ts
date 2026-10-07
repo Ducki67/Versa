@@ -10,8 +10,9 @@ app.get("/fortnite/api/calendar/v1/timeline", (c) => {
   const season = version?.season || 1;
   const build = version?.build || 1;
   const catalog = getCatalogSummary();
-  const seasonTemplateId = `AthenaSeason:athenaseason${season}`;
-  const eventFlags = [`Season${season}`, `LobbySeason${season}`];
+  const seasonTemplateId = season < 2 ? `AthenaSeason:AthenaSeason${String(season).padStart(2, "0")}` : `AthenaSeason:athenaseason${season}`;
+  const validFrom = catalog.activationDate;
+  const cacheExpire = catalog.expirationDate;
   const calendarInfo = {
     week: 1,
     season,
@@ -20,38 +21,73 @@ app.get("/fortnite/api/calendar/v1/timeline", (c) => {
     platform: version?.platform || "Windows",
     catalogId: catalog.catalogId,
   };
+  const clientState = {
+    activeStorefronts: [],
+    eventNamedWeights: {},
+    activeEvents: [],
+    seasonNumber: season,
+    seasonTemplateId,
+    matchXpBonusPoints: 0,
+    eventPunchCardTemplateId: "",
+    seasonBegin: cacheExpire,
+    seasonEnd: cacheExpire,
+    seasonDisplayedEnd: cacheExpire,
+    weeklyStoreEnd: cacheExpire,
+    stwEventStoreEnd: cacheExpire,
+    stwWeeklyStoreEnd: cacheExpire,
+    dailyStoreEnd: cacheExpire,
+    eventFlags: [`Season${season}`, `LobbySeason${season}`],
+    calendarInfo,
+    storefront: {
+      catalogId: catalog.catalogId,
+      expiration: cacheExpire,
+      storefronts: catalog.storefronts,
+    },
+  };
 
   return c.json({
     channels: {
+      "standalone-store": {},
+      "client-matchmaking": {},
+      "tk-daily-quests": {
+        states: [{ validFrom, activeEvents: [], state: {} }],
+        cacheExpire,
+      },
+      tk: {},
+      "featured-islands": {},
+      "community-votes": {},
+      stw: {
+        states: [{ validFrom, activeEvents: [], state: { calendarInfo } }],
+        cacheExpire,
+      },
       "stw-dev": {
-        states: [{ validFrom: catalog.activationDate, activeEvents: [], state: { calendarInfo } }],
-        cacheExpire: catalog.expirationDate,
+        states: [{ validFrom, activeEvents: [], state: { calendarInfo } }],
+        cacheExpire,
       },
       "common-core": {
-        states: [{ validFrom: catalog.activationDate, activeEvents: [], state: { calendarInfo } }],
-        cacheExpire: catalog.expirationDate,
+        states: [{ validFrom, activeEvents: [], state: { calendarInfo } }],
+        cacheExpire,
       },
       "client-events": {
         states: [
           {
-            validFrom: catalog.activationDate,
-            activeEvents: [],
-            state: {
-              calendarInfo,
-              seasonTemplateId,
-              eventFlags,
-              storefront: {
-                catalogId: catalog.catalogId,
-                expiration: catalog.expirationDate,
-                storefronts: catalog.storefronts,
+            validFrom,
+            activeEvents: [
+              {
+                eventType: `EventFlag.LobbySeason${season}`,
+                activeUntil: cacheExpire,
+                activeSince: validFrom,
               },
-            },
+            ],
+            state: clientState,
           },
         ],
-        cacheExpire: catalog.expirationDate,
+        cacheExpire,
       },
     },
     events: [],
+    cacheIntervalMins: 99999,
+    currentTime: new Date().toISOString(),
     posixTimestamps: true,
   });
 });

@@ -1,9 +1,17 @@
 import { Hono } from "hono";
 import { buildCatalogResponse, getCatalogWindow, getCatalogOfferId } from "../services/catalog";
+import { parseVersion } from "../data/version-compat";
 
 const app = new Hono();
 
-app.get("/fortnite/api/storefront/v2/catalog", (c) => c.json(buildCatalogResponse()));
+app.get("/fortnite/api/storefront/v2/catalog", (c) => {
+  const version = c.get("version") as ReturnType<typeof parseVersion> | undefined;
+  const full = buildCatalogResponse();
+  if ((version?.build || 999) < 4) {
+    return c.json({ ...full, storefronts: full.storefronts.map((s) => ({ ...s, catalogEntries: s.catalogEntries.slice(0, 30) })) });
+  }
+  return c.json(full);
+});
 
 app.get("/fortnite/api/storefront/v2/keychain", (c) => c.json({
   keychain: [

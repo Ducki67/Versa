@@ -2,9 +2,12 @@ import type { ServerWebSocket } from "bun";
 import { logger } from "../utils/logger";
 import { makeID } from "../utils/funcs";
 import { createGameSession, sessions, tickets } from "../routes/matchmaking";
+import { xmppOpen, xmppMessage, xmppClose } from "../xmpp/server";
 
-interface SocketData { connectionId: string; accountId: string; ticketId: string; sessionId: string; }
+interface SocketData { kind: "mm"; connectionId: string; accountId: string; ticketId: string; sessionId: string; }
+interface XmppSocketData { kind: "xmpp"; connectionId: string; }
 type Socket = ServerWebSocket<SocketData>;
+type AnySocket = ServerWebSocket<SocketData | XmppSocketData>;
 
 interface TicketPayload { ticketId?: string; sessionId?: string; accountId?: string; region?: string; playlist?: string; buildUniqueId?: string; partyPlayerIds?: string[]; platform?: string; }
 
@@ -54,13 +57,26 @@ async function runQueue(ws: Socket) {
   const ticket = tickets.get(ticketId);
   if (ticket) ticket.state = "playing";
   if (!send(ws, "Play", { matchId, sessionId, joinDelaySec: 1 })) return;
-  logger.success("Matchmaker sent Play", `session ${sessionId}`);
+  logger.mm("sent Play", `session ${sessionId}`);
+}
+
+export function wantsXmpp(req: Request): boolean {
+  const protocol = req.headers.get("sec-websocket-protocol") || "";
+  return protocol.toLowerCase().includes("xmpp");
 }
 
 export function startMatchmaker(port: number) {
-  const server = Bun.serve<SocketData>({
+  const server = Bun.serve<SocketData | XmppSocketData>({
     port,
     fetch(req, srv) {
+      const protocol = req.headers.get("sec-websocket-protocol");
+      const echo = protocol ? { "Sec-WebSocket-Protocol": protocol.split(",")[0].trim() } : undefined;
+      if (wantsXmpp(req)) {
+        logger.mm("xmpp upgrade attempt", `${req.url} proto=${protocol}`);
+        const upgraded = srv.upgrade(req, { data: { kind: "xmpp", connectionId: makeID() } as XmppSocketData, headers: echo });
+        if (upgraded) return undefined;
+        return new Response("XMPP endpoint - websocket upgrade required", { status: 426 });
+      }
       const ticket = decodeTicket(req.headers.get("authorization"));
       let sessionId = ticket?.sessionId || "";
       let ticketId = ticket?.ticketId || "";
@@ -79,25 +95,29 @@ export function startMatchmaker(port: number) {
       if (!tickets.has(ticketId)) {
         tickets.set(ticketId, { accountId, ticketId, sessionId, createdAt: Date.now(), state: "waiting", buildVersion: "1.0", buildUniqueId: ticket?.buildUniqueId || "0", region: ticket?.region || "NA", playlist: ticket?.playlist || "Playlist_DefaultDuo", platform: ticket?.platform || "Windows", partyPlayerIds: ticket?.partyPlayerIds || (accountId ? [accountId] : []) });
       }
-      const protocol = req.headers.get("sec-websocket-protocol");
+      const mmProtocol = req.headers.get("sec-websocket-protocol");
       const upgraded = srv.upgrade(req, {
-        data: { connectionId: makeID(), accountId, ticketId, sessionId },
-        headers: protocol ? { "Sec-WebSocket-Protocol": protocol.split(",")[0].trim() } : undefined,
+        data: { kind: "mm", connectionId: makeID(), accountId, ticketId, sessionId } as SocketData,
+        headers: mmProtocol ? { "Sec-WebSocket-Protocol": mmProtocol.split(",")[0].trim() } : undefined,
       });
       if (upgraded) return undefined;
       return new Response("Matchmaker endpoint - websocket upgrade required", { status: 426 });
     },
     websocket: {
-      open(ws) {
-        logger.info("Matchmaker client connected", ws.data.accountId ? ws.data.accountId : "unidentified");
-        void runQueue(ws).catch((err) => logger.error("Matchmaker queue error", err instanceof Error ? err.message : String(err)));
+      open(ws: AnySocket) {
+        if (ws.data.kind === "xmpp") return xmppOpen(ws as never);
+        logger.mm("client connected", (ws.data as SocketData).accountId ? (ws.data as SocketData).accountId : "unidentified");
+        void runQueue(ws as unknown as Socket).catch((err) => logger.error("Matchmaker queue error", err instanceof Error ? err.message : String(err)));
       },
-      message() { },
-      close(ws) {
-        logger.info("Matchmaker client disconnected", ws.data.accountId ? ws.data.accountId : "unidentified");
+      message(ws: AnySocket, raw: string | Buffer) {
+        if (ws.data.kind === "xmpp") return xmppMessage(ws as never, raw as never);
+      },
+      close(ws: AnySocket) {
+        if (ws.data.kind === "xmpp") return xmppClose(ws as never);
+        logger.mm("client disconnected", (ws.data as SocketData).accountId ? (ws.data as SocketData).accountId : "unidentified");
       },
     },
   });
-  logger.success("Matchmaker listening", `ws://localhost:${port}`);
+  logger.mm("listening", `ws://localhost:${port} (mm + xmpp)`);
   return server;
 }

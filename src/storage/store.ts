@@ -97,18 +97,51 @@ class Store {
   private readonly profilesDirectory = path.join(DATA_ROOT, "profiles");
   private readonly deviceAuthDirectory = path.join(DATA_ROOT, "device-auth");
   private readonly userStorageDirectory = path.join(DATA_ROOT, "client-settings");
+  private readonly accountCache = new Map<string, AccountData>();
+  private readonly emailCache = new Map<string, AccountData>();
+  private readonly displayCache = new Map<string, AccountData>();
+  private readonly tokenCache = new Map<string, TokenData>();
+  private readonly profileCache = new Map<string, ProfileData>();
+  private emailScanDone = false;
+
+  private cacheAccount(account: AccountData) {
+    this.accountCache.set(account.accountId, account);
+    if (account.email) this.emailCache.set(normalized(account.email), account);
+    if (account.displayName) this.displayCache.set(normalized(account.displayName), account);
+  }
+
+  private ensureEmailScan() {
+    if (this.emailScanDone) return;
+    this.emailScanDone = true;
+    for (const file of listFiles(this.accountsDirectory, ".json")) {
+      const account = readJson<AccountData | null>(path.join(this.accountsDirectory, file), null);
+      if (account) this.cacheAccount(account);
+    }
+  }
 
   getAccount(accountId: string): AccountData | null {
     if (!validSegment(accountId)) return null;
-    return readJson<AccountData | null>(path.join(this.accountsDirectory, `${accountId}.json`), null);
+    const hit = this.accountCache.get(accountId);
+    if (hit) return hit;
+    const found = readJson<AccountData | null>(path.join(this.accountsDirectory, `${accountId}.json`), null);
+    if (found) this.cacheAccount(found);
+    return found;
   }
 
   getAccountByEmail(email: string): AccountData | null {
     const query = normalized(email);
     if (!query) return null;
+    const hit = this.emailCache.get(query);
+    if (hit) return hit;
+    this.ensureEmailScan();
+    const scanned = this.emailCache.get(query);
+    if (scanned) return scanned;
     for (const file of listFiles(this.accountsDirectory, ".json")) {
       const account = readJson<AccountData | null>(path.join(this.accountsDirectory, file), null);
-      if (account && normalized(account.email) === query) return account;
+      if (account && normalized(account.email) === query) {
+        this.cacheAccount(account);
+        return account;
+      }
     }
     return null;
   }
@@ -116,9 +149,17 @@ class Store {
   getAccountByDisplayName(displayName: string): AccountData | null {
     const query = normalized(displayName);
     if (!query) return null;
+    const hit = this.displayCache.get(query);
+    if (hit) return hit;
+    this.ensureEmailScan();
+    const scanned = this.displayCache.get(query);
+    if (scanned) return scanned;
     for (const file of listFiles(this.accountsDirectory, ".json")) {
       const account = readJson<AccountData | null>(path.join(this.accountsDirectory, file), null);
-      if (account && normalized(account.displayName) === query) return account;
+      if (account && normalized(account.displayName) === query) {
+        this.cacheAccount(account);
+        return account;
+      }
     }
     return null;
   }
@@ -132,6 +173,7 @@ class Store {
   saveAccount(account: AccountData) {
     if (!validSegment(account.accountId)) throw new Error("Invalid account id");
     writeJson(path.join(this.accountsDirectory, `${account.accountId}.json`), account);
+    this.cacheAccount(account);
   }
 
   createAccount(email: string, displayName: string, passwordHash: string): AccountData {
@@ -152,6 +194,15 @@ class Store {
 
   deleteAccount(accountId: string) {
     if (!validSegment(accountId)) return;
+    const existing = this.accountCache.get(accountId);
+    if (existing) {
+      if (existing.email) this.emailCache.delete(normalized(existing.email));
+      if (existing.displayName) this.displayCache.delete(normalized(existing.displayName));
+    }
+    this.accountCache.delete(accountId);
+    for (const [key, profile] of this.profileCache) {
+      if (profile.accountId === accountId) this.profileCache.delete(key);
+    }
     removeFile(path.join(this.accountsDirectory, `${accountId}.json`));
     this.deleteAccountTokens(accountId);
     removeFile(path.join(this.deviceAuthDirectory, `${accountId}.json`));
@@ -159,19 +210,28 @@ class Store {
 
   getToken(token: string): TokenData | null {
     if (!token) return null;
-    return readJson<TokenData | null>(path.join(this.tokensDirectory, `${tokenFileName(token)}.json`), null);
+    const hit = this.tokenCache.get(token);
+    if (hit) return hit;
+    const found = readJson<TokenData | null>(path.join(this.tokensDirectory, `${tokenFileName(token)}.json`), null);
+    if (found) this.tokenCache.set(token, found);
+    return found;
   }
 
   saveToken(token: TokenData) {
     writeJson(path.join(this.tokensDirectory, `${tokenFileName(token.token)}.json`), token);
+    this.tokenCache.set(token.token, token);
   }
 
   deleteToken(token: string) {
     if (!token) return;
+    this.tokenCache.delete(token);
     removeFile(path.join(this.tokensDirectory, `${tokenFileName(token)}.json`));
   }
 
   deleteAccountTokens(accountId: string) {
+    for (const [key, cached] of this.tokenCache) {
+      if (cached.accountId === accountId) this.tokenCache.delete(key);
+    }
     for (const file of listFiles(this.tokensDirectory, ".json")) {
       const token = readJson<TokenData | null>(path.join(this.tokensDirectory, file), null);
       if (token?.accountId === accountId) removeFile(path.join(this.tokensDirectory, file));
@@ -179,6 +239,9 @@ class Store {
   }
 
   deleteExpiredTokens(now = Date.now()) {
+    for (const [key, cached] of this.tokenCache) {
+      if (Number.isNaN(Date.parse(cached.expiresAt)) || Date.parse(cached.expiresAt) <= now) this.tokenCache.delete(key);
+    }
     for (const file of listFiles(this.tokensDirectory, ".json")) {
       const token = readJson<TokenData | null>(path.join(this.tokensDirectory, file), null);
       if (!token || Number.isNaN(Date.parse(token.expiresAt)) || Date.parse(token.expiresAt) <= now) {
@@ -189,7 +252,12 @@ class Store {
 
   getProfile(accountId: string, profileId: string): ProfileData | null {
     if (!validSegment(accountId) || !validSegment(profileId)) return null;
-    return readJson<ProfileData | null>(path.join(this.profilesDirectory, accountId, `${profileId}.json`), null);
+    const key = `${accountId}:${profileId}`;
+    const hit = this.profileCache.get(key);
+    if (hit) return hit;
+    const found = readJson<ProfileData | null>(path.join(this.profilesDirectory, accountId, `${profileId}.json`), null);
+    if (found) this.profileCache.set(key, found);
+    return found;
   }
 
   saveProfile(profile: ProfileData) {
@@ -197,6 +265,7 @@ class Store {
       throw new Error("Invalid profile identity");
     }
     writeJson(path.join(this.profilesDirectory, profile.accountId, `${profile.profileId}.json`), profile);
+    this.profileCache.set(`${profile.accountId}:${profile.profileId}`, profile);
   }
 
   getDefaultProfile(profileId: string): Record<string, unknown> | null {

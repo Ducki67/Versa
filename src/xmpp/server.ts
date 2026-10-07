@@ -3,9 +3,40 @@ import { store } from "../storage/store";
 import { decodeToken } from "../middleware/auth";
 import { logger } from "../utils/logger";
 import { makeID } from "../utils/funcs";
-import { parseXml, findChild, childContent, xml, isJSON, type XmlNode } from "./xml";
+import { parseXml, findChild, childContent, xml, isJSON, type XmlNode, type XmlElement } from "./xml";
 
 export const XMPP_DOMAIN = "prod.ol.epicgames.com";
+export const XMPP_MUC_DOMAIN = `muc.${XMPP_DOMAIN}`;
+export const XMPP_CONFERENCE_DOMAIN = `conference.${XMPP_DOMAIN}`;
+
+const mucRooms = new Map<string, Set<string>>();
+
+function mucRoomOf(to: string): string | null {
+  const at = to.indexOf("@");
+  if (at === -1) return null;
+  const host = to.slice(at + 1).split("/")[0].toLowerCase();
+  if (host !== XMPP_MUC_DOMAIN && host !== XMPP_CONFERENCE_DOMAIN) return null;
+  const room = to.slice(0, at).toLowerCase();
+  return room || null;
+}
+
+function mucNick(room: string, client: XmppClient): string {
+  return `${room}@${XMPP_MUC_DOMAIN}/${client.displayName}`;
+}
+
+function mucItem(nick: string, jid: string, code110: boolean, created: boolean): XmlElement {
+  const statuses: XmlElement[] = [];
+  if (code110) statuses.push({ name: "status", attrs: { code: "110" } });
+  if (created) statuses.push({ name: "status", attrs: { code: "201" } });
+  return {
+    name: "x",
+    attrs: { xmlns: "http://jabber.org/protocol/muc#user" },
+    children: [
+      { name: "item", attrs: { nick, jid, role: "participant", affiliation: "none" } },
+      ...statuses,
+    ],
+  };
+}
 
 interface SocketData {
   connectionId: string;
@@ -213,7 +244,7 @@ function handleAuth(ws: Socket, stanza: XmlNode, state: PendingState) {
 
   for (const [connectionId, existing] of [...clients]) {
     if (existing.accountId !== accountId) continue;
-    logger.info("XMPP replacing stale session", account.displayName);
+    logger.xmpp("replacing stale session", account.displayName);
     clients.delete(connectionId);
     broadcastPresence(existing, "{}", false, true);
     closeStream(existing.ws);
@@ -223,6 +254,7 @@ function handleAuth(ws: Socket, stanza: XmlNode, state: PendingState) {
   state.displayName = account.displayName;
   state.authenticated = true;
 
+  logger.xmpp("auth success", `${account.displayName} (${accountId})`);
   ws.send(xml({ name: "success", attrs: { xmlns: "urn:ietf:params:xml:ns:xmpp-sasl" } }));
 }
 
@@ -254,7 +286,7 @@ function handleIq(ws: Socket, stanza: XmlNode, state: PendingState) {
     clients.set(ws.data.connectionId, client);
     pending.delete(ws.data.connectionId);
 
-    logger.info("XMPP client connected", `${client.displayName} (${clients.size} online)`);
+    logger.xmpp("client connected", `${client.displayName} (${clients.size} online)`);
 
     ws.send(
       xml({
@@ -292,6 +324,18 @@ function handleIq(ws: Socket, stanza: XmlNode, state: PendingState) {
     return;
   }
 
+  const rosterQuery = findChild(stanza, "query");
+  if (rosterQuery && rosterQuery.attributes.xmlns === "jabber:iq:roster") {
+    ws.send(
+      xml({
+        name: "iq",
+        attrs: { to: client.jid, from: XMPP_DOMAIN, id: id ?? makeID(), xmlns: "jabber:client", type: "result" },
+        children: [{ name: "query", attrs: { xmlns: "jabber:iq:roster", ver: "" } }],
+      })
+    );
+    return;
+  }
+
   ws.send(
     xml({
       name: "iq",
@@ -314,6 +358,29 @@ function handleMessage(ws: Socket, stanza: XmlNode) {
   if (body === undefined) return;
 
   const to = stanza.attributes.to;
+
+  const groupRoom = mucRoomOf(to || "");
+  if (groupRoom) {
+    const members = mucRooms.get(groupRoom);
+    if (!members || !members.has(sender.connectionId)) return;
+    const groupBody = childContent(stanza, "body");
+    if (groupBody === undefined) return;
+    const from = mucNick(groupRoom, sender);
+    for (const memberId of members) {
+      const m = clients.get(memberId);
+      if (!m) continue;
+      try {
+        m.ws.send(
+          xml({
+            name: "message",
+            attrs: { to: m.jid, from, xmlns: "jabber:client", type: "groupchat" },
+            children: [{ name: "body", text: groupBody }],
+          })
+        );
+      } catch {}
+    }
+    return;
+  }
 
   if (stanza.attributes.type === "chat") {
     if (!to) return;
@@ -366,6 +433,66 @@ function handlePresence(ws: Socket, stanza: XmlNode) {
   const client = clientFor(ws);
   if (!client) return closeStream(ws);
 
+  const dest = stanza.attributes.to || "";
+  const room = mucRoomOf(dest);
+  const joinX = stanza.children.some((ch) => ch.name === "x" || ch.name === "muc:x");
+  if (room && (joinX || stanza.attributes.type === "unavailable")) {
+    const members = mucRooms.get(room) ?? new Set<string>();
+    const nick = mucNick(room, client);
+    if (stanza.attributes.type === "unavailable") {
+      members.delete(client.connectionId);
+      if (members.size === 0) mucRooms.delete(room);
+      else mucRooms.set(room, members);
+      try {
+        ws.send(
+          xml({
+            name: "presence",
+            attrs: { to: client.jid, from: nick, xmlns: "jabber:client", type: "unavailable" },
+            children: [mucItem(client.displayName, client.jid, true, false)],
+          })
+        );
+      } catch {}
+      return;
+    }
+    const created = members.size === 0;
+    mucRooms.set(room, members);
+    const isNew = !members.has(client.connectionId);
+    members.add(client.connectionId);
+    try {
+      ws.send(
+        xml({
+          name: "presence",
+          attrs: { to: client.jid, from: nick, xmlns: "jabber:client" },
+          children: [mucItem(client.displayName, client.jid, true, created)],
+        })
+      );
+    } catch {}
+    for (const memberId of members) {
+      const m = clients.get(memberId);
+      if (!m || m.connectionId === client.connectionId) continue;
+      try {
+        ws.send(
+          xml({
+            name: "presence",
+            attrs: { to: client.jid, from: mucNick(room, m), xmlns: "jabber:client" },
+            children: [mucItem(m.displayName, m.jid, false, false)],
+          })
+        );
+      } catch {}
+      try {
+        m.ws.send(
+          xml({
+            name: "presence",
+            attrs: { to: m.jid, from: nick, xmlns: "jabber:client" },
+            children: [mucItem(client.displayName, client.jid, false, false)],
+          })
+        );
+      } catch {}
+    }
+    void isNew;
+    return;
+  }
+
   if (stanza.attributes.type === "unavailable") {
     broadcastPresence(client, "{}", false, true);
     return;
@@ -377,76 +504,105 @@ function handlePresence(ws: Socket, stanza: XmlNode) {
   broadcastPresence(client, status as string, findChild(stanza, "show") !== undefined, false);
 }
 
+export type XmppSocket = ServerWebSocket<{ connectionId: string } & Record<string, unknown>>;
+
+export function xmppStreamOpened(ws: XmppSocket) {
+  const sock = ws as unknown as Socket;
+  let state = clientFor(sock) ?? pending.get(sock.data.connectionId);
+  if (!state) {
+    state = { streamId: newStreamId() };
+    pending.set(sock.data.connectionId, state);
+  }
+  handleOpen(sock, state);
+}
+
+export function xmppOpen(ws: XmppSocket) {
+  pending.set(ws.data.connectionId as string, { streamId: newStreamId() });
+}
+
+export function xmppMessage(ws: XmppSocket, raw: string | Buffer | ArrayBuffer | Uint8Array) {
+  const text = typeof raw === "string" ? raw : Buffer.from(raw as Uint8Array).toString("utf-8");
+  const stanza = parseXml(text);
+  if (!stanza) return closeStream(ws as Socket);
+  const sock = ws as unknown as Socket;
+  let state: PendingState | undefined = clientFor(sock) ?? pending.get(sock.data.connectionId);
+  if (!state) {
+    state = { streamId: newStreamId() };
+    pending.set(sock.data.connectionId, state);
+  }
+
+  try {
+    switch (stanza.name) {
+      case "open":
+        handleOpen(sock, state);
+        break;
+      case "auth":
+        handleAuth(sock, stanza, state);
+        break;
+      case "iq":
+        handleIq(sock, stanza, state);
+        break;
+      case "message":
+        handleMessage(sock, stanza);
+        break;
+      case "presence":
+        handlePresence(sock, stanza);
+        break;
+      case "close":
+        closeStream(sock);
+        break;
+      default:
+        break;
+    }
+  } catch (err) {
+    logger.error("XMPP stanza error", err instanceof Error ? err.message : String(err));
+  }
+}
+
+export function xmppClose(ws: XmppSocket) {
+  const sock = ws as unknown as Socket;
+  const client = clientFor(sock);
+  pending.delete(sock.data.connectionId);
+  if (!client) return;
+
+  clients.delete(sock.data.connectionId);
+  broadcastPresence(client, "{}", false, true);
+  logger.xmpp("client disconnected", `${client.displayName} (${clients.size} online)`);
+}
+
+export function upgradeXmppSocket(req: Request, srv: { upgrade: (req: Request, opts: { data: { connectionId: string }; headers?: Record<string, string> }) => boolean }): boolean {
+  const protocol = req.headers.get("sec-websocket-protocol");
+  return srv.upgrade(req, {
+    data: { connectionId: makeID() },
+    headers: protocol
+      ? { "Sec-WebSocket-Protocol": protocol.split(",")[0].trim() }
+      : undefined,
+  });
+}
+
 export function startXmpp(port: number) {
   const server = Bun.serve<SocketData>({
     port,
     fetch(req, srv) {
-      const protocol = req.headers.get("sec-websocket-protocol");
-      const upgraded = srv.upgrade(req, {
-        data: { connectionId: makeID() },
-        headers: protocol
-          ? { "Sec-WebSocket-Protocol": protocol.split(",")[0].trim() }
-          : undefined,
-      });
+      const upgraded = upgradeXmppSocket(req, srv);
       if (upgraded) return undefined;
       return new Response("XMPP endpoint - websocket upgrade required", { status: 426 });
     },
     websocket: {
       open(ws) {
-        pending.set(ws.data.connectionId, { streamId: newStreamId() });
+        xmppOpen(ws as unknown as XmppSocket);
       },
 
       message(ws, raw) {
-        const text = typeof raw === "string" ? raw : Buffer.from(raw).toString("utf-8");
-        const stanza = parseXml(text);
-        if (!stanza) return closeStream(ws);
-
-        let state: PendingState | undefined = clientFor(ws) ?? pending.get(ws.data.connectionId);
-        if (!state) {
-          state = { streamId: newStreamId() };
-          pending.set(ws.data.connectionId, state);
-        }
-
-        try {
-          switch (stanza.name) {
-            case "open":
-              handleOpen(ws, state);
-              break;
-            case "auth":
-              handleAuth(ws, stanza, state);
-              break;
-            case "iq":
-              handleIq(ws, stanza, state);
-              break;
-            case "message":
-              handleMessage(ws, stanza);
-              break;
-            case "presence":
-              handlePresence(ws, stanza);
-              break;
-            case "close":
-              closeStream(ws);
-              break;
-            default:
-              break;
-          }
-        } catch (err) {
-          logger.error("XMPP stanza error", err instanceof Error ? err.message : String(err));
-        }
+        xmppMessage(ws as unknown as XmppSocket, raw as Buffer);
       },
 
       close(ws) {
-        const client = clientFor(ws);
-        pending.delete(ws.data.connectionId);
-        if (!client) return;
-
-        clients.delete(ws.data.connectionId);
-        broadcastPresence(client, "{}", false, true);
-        logger.info("XMPP client disconnected", `${client.displayName} (${clients.size} online)`);
+        xmppClose(ws as unknown as XmppSocket);
       },
     },
   });
 
-  logger.success("XMPP listening", `ws://localhost:${port}`);
+  logger.xmpp("listening", `ws://localhost:${port}`);
   return server;
 }

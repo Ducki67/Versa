@@ -1,13 +1,92 @@
 {
   "accountId": "aa6f2a38e3cd472990165d5ebb1273d5",
   "profileId": "campaign",
-  "rvn": 4,
-  "commandRevision": 3,
+  "rvn": 7,
+  "commandRevision": 6,
   "data": {
     "created": "2026-09-28T15:46:18.053Z",
     "wipeNumber": 1,
     "version": "versa_v1",
-    "items": {},
+    "items": {
+      "aaea24b0-aa75-4012-9941-8fa783cf1e48": {
+        "templateId": "Expedition:expedition_supplyrun_long_t03",
+        "attributes": {
+          "expedition_expiration_start_time": "2026-10-07T16:36:05.291Z",
+          "expedition_expiration_end_time": "2026-10-07T20:36:05.291Z",
+          "expedition_criteria": [],
+          "level": 1,
+          "expedition_max_target_power": 200,
+          "expedition_min_target_power": 23,
+          "expedition_slot_id": "expedition.generation.land.t03_0"
+        },
+        "quantity": 1
+      },
+      "a026bafc-5639-4fcf-a52a-fb55b4a228a3": {
+        "templateId": "Expedition:expedition_survivorscouting_long_t03",
+        "attributes": {
+          "expedition_expiration_start_time": "2026-10-07T16:36:05.291Z",
+          "expedition_expiration_end_time": "2026-10-07T20:36:05.291Z",
+          "expedition_criteria": [],
+          "level": 1,
+          "expedition_max_target_power": 200,
+          "expedition_min_target_power": 23,
+          "expedition_slot_id": "expedition.generation.land.t03_1"
+        },
+        "quantity": 1
+      },
+      "aff9a416-4e9b-4608-97fb-0e2e927f479c": {
+        "templateId": "Expedition:expedition_sea_survivorscouting_medium_t02",
+        "attributes": {
+          "expedition_expiration_start_time": "2026-10-07T16:36:05.291Z",
+          "expedition_expiration_end_time": "2026-10-07T19:06:05.291Z",
+          "expedition_criteria": [],
+          "level": 1,
+          "expedition_max_target_power": 160,
+          "expedition_min_target_power": 15,
+          "expedition_slot_id": "expedition.generation.sea.t02_1"
+        },
+        "quantity": 1
+      },
+      "586454d3-2c0c-4a90-a8ba-102c5d33ae01": {
+        "templateId": "Expedition:expedition_air_supplyrun_long_t02",
+        "attributes": {
+          "expedition_expiration_start_time": "2026-10-07T16:36:05.291Z",
+          "expedition_expiration_end_time": "2026-10-07T19:06:05.291Z",
+          "expedition_criteria": [],
+          "level": 1,
+          "expedition_max_target_power": 160,
+          "expedition_min_target_power": 15,
+          "expedition_slot_id": "expedition.generation.air.t02_1"
+        },
+        "quantity": 1
+      },
+      "a21353fc-444d-42a5-b26b-f3215dc1a671": {
+        "templateId": "Expedition:expedition_air_supplyrun_long_t04",
+        "attributes": {
+          "expedition_expiration_start_time": "2026-10-07T16:36:05.291Z",
+          "expedition_expiration_end_time": "2026-10-07T22:36:05.291Z",
+          "expedition_criteria": [],
+          "level": 1,
+          "expedition_max_target_power": 240,
+          "expedition_min_target_power": 34,
+          "expedition_slot_id": "expedition.generation.air.t04_1"
+        },
+        "quantity": 1
+      },
+      "2d87dd81-c937-46d6-8680-d84eae3ef4ba": {
+        "templateId": "Expedition:expedition_air_survivorscouting_long_t02",
+        "attributes": {
+          "expedition_expiration_start_time": "2026-10-07T16:36:05.291Z",
+          "expedition_expiration_end_time": "2026-10-07T19:06:05.291Z",
+          "expedition_criteria": [],
+          "level": 1,
+          "expedition_max_target_power": 160,
+          "expedition_min_target_power": 15,
+          "expedition_slot_id": "expedition.generation.air.t02_0"
+        },
+        "quantity": 1
+      }
+    },
     "stats": {
       "attributes": {
         "quest_manager": {},

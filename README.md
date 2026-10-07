@@ -30,3 +30,12 @@ Universal Fortnite backend base written in TypeScript
 
 
 </details>
+
+## Todo
+- [ ] Matchmaker (in som seasons and versions)
+- [ ] MCP and Locker (with all skins)
+- [ ] Itemshop
+- [ ] Lobby support for 1.7.2 - latest
+- [ ] V-bucks / Store tab
+- [ ] Battle Passes (on most seasons)
+- [ ] Timeline stuff (for some seasons)

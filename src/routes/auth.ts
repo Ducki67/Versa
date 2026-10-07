@@ -72,6 +72,9 @@ async function handleToken(c: any) {
         const name = email.includes("@") ? email.split("@")[0] : email;
         const passwordHash = await bcrypt.hash(password, 10);
         user = store.createAccount(email, name, passwordHash);
+      } else if (user.passwordHash) {
+        const ok = await bcrypt.compare(password, user.passwordHash).catch(() => false);
+        if (!ok) return c.json(errorResponse("com.epicgames.account", "errors.com.epicgames.account.invalid_credentials", "Invalid credentials"), 400);
       }
       accountId = user.accountId;
       displayName = user.displayName;
@@ -190,9 +193,27 @@ app.delete("/account/api/oauth/sessions/kill", async (c) => {
 });
 
 app.get("/account/api/public/account", (c) => {
-  const ids = c.req.query("accountId")?.split(",") || [];
+  let ids: string[] = [];
+  try {
+    const multi = (c.req as unknown as { queries: (k: string) => Record<string, string[]> }).queries?.("accountId");
+    if (multi && typeof multi === "object") {
+      const arr = (multi as unknown as Record<string, string[]>)["accountId"] || (multi as unknown as string[]);
+      if (Array.isArray(arr)) ids = arr.flatMap((v) => String(v).split(",")).filter(Boolean);
+    }
+  } catch {}
+  if (ids.length === 0) ids = c.req.query("accountId")?.split(",").filter(Boolean) || [];
   const accounts = store.getAccounts(ids);
   return c.json(accounts.map((a) => ({ id: a.accountId, displayName: a.displayName, email: a.email, externallyVerified: false, externalAuths: {} })));
+});
+
+app.get("/account/api/oauth/exchange", async (c) => {
+  const rawToken = extractBearerToken(c.req.header("authorization"));
+  if (!rawToken) return c.json(errorResponse("com.epicgames.account", "errors.com.epicgames.account.authorization_token_missing", "Token missing"), 401);
+  const decoded = decodeToken(rawToken);
+  if (!decoded) return c.json(errorResponse("com.epicgames.account", "errors.com.epicgames.account.authorization_token_invalid", "Invalid token"), 401);
+  const code = generateExchangeCode();
+  exchangeCodes.set(code, { accountId: decoded.sub, clientId: decoded.clid, expiresAt: Date.now() + 300000 });
+  return c.json({ code, expiresInSeconds: 300, creatingClientId: decoded.clid });
 });
 
 app.get("/account/api/public/account/:accountId", (c) => {
@@ -233,9 +254,26 @@ app.post("/account/api/public/account/:accountId/device-auth", async (c) => {
   return c.json(device);
 });
 
+app.post("/account/api/public/account/:accountId/deviceAuth", async (c) => {
+  const accountId = c.req.param("accountId");
+  const user = store.getAccount(accountId);
+  if (!user) return c.json(errorResponse("com.epicgames.account", "errors.com.epicgames.account.not_found", "Account not found"), 404);
+  const device = { deviceId: makeID().replace(/-/g, ""), accountId, secret: generateExchangeCode(), created: new Date().toISOString(), lastAccess: new Date().toISOString() };
+  store.saveDeviceAuth(device);
+  return c.json({ accountId, deviceId: device.deviceId, secret: device.secret });
+});
+
+app.get("/account/api/public/account/:accountId/deviceAuth", (c) => c.json(store.listDeviceAuths(c.req.param("accountId"))));
+
 app.get("/account/api/public/account/:accountId/device-auth", (c) => c.json(store.listDeviceAuths(c.req.param("accountId"))));
 
 app.get("/account/api/public/account/:accountId/device-auth/:deviceId", (c) => {
+  const device = store.getDeviceAuth(c.req.param("accountId"), c.req.param("deviceId"));
+  if (!device) return c.json(errorResponse("com.epicgames.account", "errors.com.epicgames.account.not_found", "Device auth not found"), 404);
+  return c.json(device);
+});
+
+app.get("/account/api/public/account/:accountId/deviceAuth/:deviceId", (c) => {
   const device = store.getDeviceAuth(c.req.param("accountId"), c.req.param("deviceId"));
   if (!device) return c.json(errorResponse("com.epicgames.account", "errors.com.epicgames.account.not_found", "Device auth not found"), 404);
   return c.json(device);
@@ -245,6 +283,13 @@ app.delete("/account/api/public/account/:accountId/device-auth/:deviceId", (c) =
   store.deleteDeviceAuth(c.req.param("accountId"), c.req.param("deviceId"));
   return c.body(null, 204);
 });
+
+app.delete("/account/api/public/account/:accountId/deviceAuth/:deviceId", (c) => {
+  store.deleteDeviceAuth(c.req.param("accountId"), c.req.param("deviceId"));
+  return c.body(null, 204);
+});
+
+app.delete("/account/api/public/account/:accountId/deviceAuth/*", (c) => c.body(null, 204));
 
 app.get("/account/api/public/account/:accountId/externalAuths", (c) => c.json([]));
 

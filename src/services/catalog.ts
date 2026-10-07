@@ -234,7 +234,12 @@ export function getCatalogOffers(): CatalogOffer[] {
   return records.map(offerFor);
 }
 
+let cachedCatalogResponse: CatalogResponse | null = null;
+let cachedCatalogSummary: CatalogSummary | null = null;
+let cachedCatalogWindow: { activationDate: string; expirationDate: string; catalogId: string } | null = null;
+
 export function buildCatalogResponse(): CatalogResponse {
+  if (cachedCatalogResponse) return cachedCatalogResponse;
   const storefronts = STOREFRONT_ORDER.map((name) => ({
     name,
     catalogEntries: records
@@ -242,7 +247,7 @@ export function buildCatalogResponse(): CatalogResponse {
       .map(entryFor),
   }));
 
-  return {
+  cachedCatalogResponse = {
     refreshIntervalHrs: 24,
     dailyPurchaseHrs: 24,
     expiration: CATALOG_END,
@@ -250,18 +255,22 @@ export function buildCatalogResponse(): CatalogResponse {
     catalogVersion: "1",
     storefronts,
   };
+  return cachedCatalogResponse;
 }
 
 export function getCatalogWindow(): { activationDate: string; expirationDate: string; catalogId: string } {
-  return {
+  if (cachedCatalogWindow) return cachedCatalogWindow;
+  cachedCatalogWindow = {
     activationDate: CATALOG_START,
     expirationDate: CATALOG_END,
     catalogId: CATALOG_ID,
   };
+  return cachedCatalogWindow;
 }
 
 export function getCatalogSummary(): CatalogSummary {
-  return {
+  if (cachedCatalogSummary) return cachedCatalogSummary;
+  cachedCatalogSummary = {
     catalogId: CATALOG_ID,
     activationDate: CATALOG_START,
     expirationDate: CATALOG_END,
@@ -270,4 +279,5 @@ export function getCatalogSummary(): CatalogSummary {
       itemCount: records.filter((record) => record.storefront === name).length,
     })),
   };
+  return cachedCatalogSummary;
 }
